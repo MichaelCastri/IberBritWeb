@@ -32,7 +32,7 @@ const AreasServicios = () => {
     <section id="areas-servicios" className="w-full bg-white py-24 text-cafeOscuro">
       <div className="max-w-7xl mx-auto px-4 text-center">
         <h2 className="font-opensans text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
-          Áreas y Servicios
+          ÁREAS Y SERVICIOS
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
           {servicios.map((area, idx) => (

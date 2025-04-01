@@ -3,6 +3,7 @@
 import React from "react";
 import Hero from "../components/Hero";
 import AreasServicios from "../components/AreasServicios";
+import KitsResumen from "../components/KitsResumen";
 // Aquí irán los nuevos imports
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
 
       {/* Kits de Asesoramiento Legal */}
       <section id="kits">
-        {/* Componente KitsResumen */}
+        {<KitsResumen/>}
       </section>
 
       {/* Por qué elegirnos */}

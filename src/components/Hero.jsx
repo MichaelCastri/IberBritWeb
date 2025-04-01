@@ -5,10 +5,11 @@ import { Button } from "./button"
 
 export default function Hero() {
   const imagePaths = [
-    "/images/Branding/3.jpg",
+    "/images/fotoscartagenas/Apoyo4.webp",
     "/images/Branding/2.webp",
-    "/images/Branding/3.webp",
-    "/images/Branding/4.webp",
+    "/images/fotoscartagenas/Apoyo1.webp",
+    "/images/fotoscartagenas/Apoyo2.webp",
+    "/images/fotoscartagenas/Apoyo3.webp",
   ]
   const [currentIndex, setCurrentIndex] = useState(0)
 

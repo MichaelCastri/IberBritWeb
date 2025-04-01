@@ -1,21 +1,27 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Navbar from "./components/Navbar.jsx"
+// src/App.jsx
 
-import Home from "./pages/Home.jsx"
-import "./index.css"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+
+// Páginas individuales
+import Laboral from "./pages/servicios/Laboral";
+import Legal from "./pages/servicios/Laboral";
+import Fiscal from "./pages/servicios/Fiscal";
 
 function App() {
   return (
     <Router>
-      
-        <Navbar /> {/* ← Este es ahora global */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* Aquí puedes añadir más rutas como /servicios, /contacto, etc. */}
-        </Routes>
-      
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/servicios/laboral" element={<Laboral />} />
+        <Route path="/servicios/legal" element={<Legal />} />
+        <Route path="/servicios/fiscal" element={<Fiscal />} />
+        <Route path="/paquetes" element={<Fiscal />} />
+      </Routes>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;
