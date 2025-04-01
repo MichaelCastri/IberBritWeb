@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import Laboral from "./pages/servicios/Laboral";
 import Legal from "./pages/servicios/Laboral";
 import Fiscal from "./pages/servicios/Fiscal";
+import Paquetes from "./pages/Paquetes";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
         <Route path="/servicios/laboral" element={<Laboral />} />
         <Route path="/servicios/legal" element={<Legal />} />
         <Route path="/servicios/fiscal" element={<Fiscal />} />
-        <Route path="/paquetes" element={<Fiscal />} />
+        <Route path="/paquetes" element={<Paquetes />} />
+        <Route path="/contacto" element={<Paquetes />} />
       </Routes>
     </Router>
   );

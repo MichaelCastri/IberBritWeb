@@ -10,43 +10,41 @@ const kits = [
       "Para autónomos que buscan una solución completa para sus obligaciones fiscales y tributarias.",
     beneficios: [
       "Planificaciones tributarias",
-      "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF...",
+      "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
       "Declaraciones informativas anuales",
       "Presentaciones telemáticas",
-      "Solicitud de certificados tributarios",
+      "Certificados tributarios",
       "Atención de requerimientos",
-      "Aplazamientos de deudas",
+      "Aplazamientos y fraccionamientos",
       "Libros-Registro Ley IVA",
     ],
-    precio: null,
   },
   {
     nombre: "Kit Fiscal Sociedades",
     descripcion:
-      "Diseñado para sociedades mercantiles y patrimoniales que necesitan gestión fiscal y contable integral.",
+      "Para sociedades mercantiles y patrimoniales que requieren planificación fiscal y contabilidad integral.",
     beneficios: [
-      "Planificaciones tributarias y pre-cierres",
+      "Planificaciones y pre-cierres",
       "Declaraciones fiscales completas",
-      "Contabilidad desde nuestro despacho",
+      "Contabilidad mensual",
       "Depósito de cuentas anuales",
-      "Libros oficiales y plan contable",
+      "Implantación del plan contable",
       "Consultas fiscales y contables",
     ],
-    precio: null,
   },
   {
     nombre: "Kit No Residentes",
     descripcion:
       "Para no residentes con obligaciones fiscales en España: IRNR, IBI/SUMA, representación y más.",
     beneficios: [
-      "Estudio fiscal personalizado en España",
-      "Pre-cálculo y presentación del IRNR",
-      "Gestión de IBI / SUMA",
-      "Representación fiscal ante la Agencia Tributaria",
-      "Asesoramiento permanente",
+      "Estudio fiscal personalizado",
+      "Pre-cálculo y presentación IRNR",
+      "Gestión del IBI / SUMA",
+      "Representación ante Hacienda",
+      "Consultoría continua",
     ],
-    precio: null,
   },
+  
 ];
 
 const KitsResumen = () => {
@@ -67,8 +65,17 @@ const KitsResumen = () => {
           {kits.map((kit, idx) => (
             <div
               key={idx}
-              className="bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between transition hover:-translate-y-1"
+              className={`relative bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between transition hover:-translate-y-1 ${
+                kit.nombre === "Kit Autónomo" ? "border-2 border-rojoIber2" : ""
+              }`}
             >
+              {/* Badge para el más popular */}
+              {kit.nombre === "Kit Autónomo" && (
+                <div className="absolute top-4 left-4 bg-black text-white text-xs font-semibold px-3 py-1 rounded-full shadow-md">
+                  El más popular
+                </div>
+              )}
+
               <div>
                 <h3 className="text-xl font-semibold text-gray-900 mb-2">
                   {kit.nombre}
@@ -102,6 +109,7 @@ const KitsResumen = () => {
           ))}
         </div>
 
+        {/* CTA a página de paquetes */}
         <Link
           to="/paquetes"
           className="inline-block bg-cafeOscuro text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"

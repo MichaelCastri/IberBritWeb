@@ -4,6 +4,8 @@ import React from "react";
 import Hero from "../components/Hero";
 import AreasServicios from "../components/AreasServicios";
 import KitsResumen from "../components/KitsResumen";
+import PorqueElegirnos from "../components/PorqueElegirnos";
+import Estadisticas from "../components/Estadisticas";
 // Aquí irán los nuevos imports
 
 const Home = () => {
@@ -23,12 +25,12 @@ const Home = () => {
 
       {/* Por qué elegirnos */}
       <section id="porque-elegirnos">
-        {/* Componente PorqueElegirnos */}
+        {<PorqueElegirnos/>}
       </section>
 
       {/* Llamada a la acción */}
       <section id="cta">
-        {/* Componente CallToAction */}
+        {<Estadisticas/>}
       </section>
 
       {/* Reseñas / Casos */}
