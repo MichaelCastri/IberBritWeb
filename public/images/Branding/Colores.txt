@@ -1,0 +1,30 @@
+Rojo iberbrit 1:
+#FF161F
+RGB : 255 22 31
+
+Rojo iberbrit 2 Logo:
+#CD2228
+RGB : 205 34 40
+
+Cafe oscuro : 
+#1B1213
+RGB : 27 18 19
+
+Gris Iberbrit Logo
+#262425
+RGB : 38 36 37
+
+🎨 Colores adicionales para equilibrio y legibilidad
+Para evitar que la web se vea demasiado oscura o agresiva, estos tonos pueden aportar luminosidad y contraste:
+
+🎯 Color neutro claro (Equilibrio y legibilidad)
+
+Beige suave (#F5F1EB o #EDEAE5) → Aporta luminosidad y calidez, puede ser el fondo principal para evitar una web demasiado oscura.
+
+Blanco puro (#FFFFFF) → Para textos sobre fondos oscuros y generar un diseño más limpio.
+
+🔹 Color de acento (Dinamismo y frescura)
+
+Azul grisáceo (#8A9AA3 o #5F7481) → Puede utilizarse para detalles sutiles, iconografía o enlaces secundarios, aportando una sensación de confianza y estabilidad.
+
+Oro o amarillo mostaza (#C8A858) → Se puede emplear en líneas divisorias, detalles en botones o secciones destacadas, aportando un toque de exclusividad.
