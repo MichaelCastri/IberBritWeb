@@ -54,7 +54,7 @@ const PorqueElegirnos = () => {
               className="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition-all"
             >
               <div className="flex items-start gap-3 mb-4">
-                <CheckCircle className="text-rojoIber2 w-6 h-6 mt-1" />
+                <CheckCircle className="text-black w-6 h-6 mt-1" />
                 <h3 className="text-xl font-semibold text-gray-900">
                   {razon.titulo}
                 </h3>
@@ -72,7 +72,7 @@ const PorqueElegirnos = () => {
           </p>
           <button
             onClick={() => navigate("/contacto")}
-            className="bg-rojoIber2 text-white px-6 py-3 rounded-lg font-semibold hover:bg-rojoIber1 transition"
+            className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-rojoIber1 transition"
           >
             Solicita tu primera asesoría
           </button>

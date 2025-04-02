@@ -6,9 +6,10 @@ import Home from "./pages/Home";
 
 // Páginas individuales
 import Laboral from "./pages/servicios/Laboral";
-import Legal from "./pages/servicios/Laboral";
+import Legal from "./pages/servicios/Legal";
 import Fiscal from "./pages/servicios/Fiscal";
 import Paquetes from "./pages/Paquetes";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/contacto" element={<Paquetes />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

@@ -6,6 +6,8 @@ import AreasServicios from "../components/AreasServicios";
 import KitsResumen from "../components/KitsResumen";
 import PorqueElegirnos from "../components/PorqueElegirnos";
 import Estadisticas from "../components/Estadisticas";
+import Testimonios from "../components/Testimonios";
+import Ubicaciones from "../components/Ubicaciones";
 // Aquí irán los nuevos imports
 
 const Home = () => {
@@ -35,12 +37,12 @@ const Home = () => {
 
       {/* Reseñas / Casos */}
       <section id="casos-reales">
-        {/* Componente CasosClientes */}
+        {<Testimonios/>}
       </section>
 
       {/* Ubicaciones */}
       <section id="ubicaciones">
-        {/* Componente Ubicaciones */}
+        {<Ubicaciones/>}
       </section>
 
       {/* Marcas colaborativas */}
