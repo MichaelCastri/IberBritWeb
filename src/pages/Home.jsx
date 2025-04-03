@@ -8,6 +8,7 @@ import PorqueElegirnos from "../components/PorqueElegirnos";
 import Estadisticas from "../components/Estadisticas";
 import Testimonios from "../components/Testimonios";
 import Ubicaciones from "../components/Ubicaciones";
+import MarcasColaboradoras from "../components/MarcasColaboradoras";
 // Aquí irán los nuevos imports
 
 const Home = () => {
@@ -47,7 +48,7 @@ const Home = () => {
 
       {/* Marcas colaborativas */}
       <section id="marcas">
-        {/* Componente MarcasColaborativas */}
+        {<MarcasColaboradoras/>}
       </section>
     </div>
   );
