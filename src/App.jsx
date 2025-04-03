@@ -10,6 +10,7 @@ import Legal from "./pages/servicios/Legal";
 import Fiscal from "./pages/servicios/Fiscal";
 import Paquetes from "./pages/Paquetes";
 import Footer from "./components/Footer";
+import Contacto from "./pages/contacto";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
         <Route path="/servicios/legal" element={<Legal />} />
         <Route path="/servicios/fiscal" element={<Fiscal />} />
         <Route path="/paquetes" element={<Paquetes />} />
-        <Route path="/contacto" element={<Paquetes />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
       <Footer/>
     </Router>

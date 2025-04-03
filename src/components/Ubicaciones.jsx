@@ -17,11 +17,11 @@ const oficinas = [
     imagen: "/images/fotoscartagenas/fotoscartagena (17).webp",
   },
   {
-    ciudad: "Cartagena",
+    ciudad: "La Manga",
     direccion:
-      "Iberbrit Legal, Calle Dr. Luis Calandre, 30, Bajo - Oficina, 30205 Cartagena, Murcia",
+      "Iberbrit Legal, 30380 La Manga del Mar Menor. Cartagena, Murcia.",
     link: "https://g.co/kgs/3w5qS94",
-    imagen: "/images/fotoscartagenas/fotoscartagena (18).webp",
+    imagen: "/images/fotoscartagenas/fotoscartagena (19).webp",
   },
 ];
 
