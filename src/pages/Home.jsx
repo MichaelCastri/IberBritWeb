@@ -12,7 +12,7 @@ import Ubicaciones from "../components/Ubicaciones";
 
 const Home = () => {
   return (
-    <div className="home-page">
+    <div className="home-page min-h-screen">
       <Hero />
 
       {/* Áreas y Servicios */}

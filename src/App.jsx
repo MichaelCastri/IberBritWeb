@@ -11,10 +11,14 @@ import Fiscal from "./pages/servicios/Fiscal";
 import Paquetes from "./pages/Paquetes";
 import Footer from "./components/Footer";
 import Contacto from "./pages/contacto";
+import ScrollToTop from "./components/ScrollToTop";
+import Nosotros from "./pages/Nosotros";
 
 function App() {
   return (
     <Router>
+        <ScrollToTop />
+
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -23,6 +27,7 @@ function App() {
         <Route path="/servicios/fiscal" element={<Fiscal />} />
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/contacto" element={<Contacto />} />
+        <Route path="/nosotros" element={<Nosotros />} />
       </Routes>
       <Footer/>
     </Router>

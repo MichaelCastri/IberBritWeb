@@ -1,34 +1,68 @@
 // src/components/Contacto.jsx
 
-import React from "react";
+import React, { useState } from "react";
 import { Mail, Phone, MessageSquareText } from "lucide-react";
 
 const Contacto = () => {
+  const [formData, setFormData] = useState({
+    nombre: "",
+    email: "",
+    telefono: "",
+    mensaje: "",
+  });
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState("");
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setError("");
+    setSuccess("");
+
+    if (!formData.nombre || !formData.email || !formData.mensaje) {
+      setError("Por favor, completa todos los campos obligatorios.");
+      return;
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      setError("Introduce un correo electrónico válido.");
+      return;
+    }
+
+    console.log("Formulario enviado:", formData);
+    setSuccess("¡Tu consulta ha sido enviada correctamente!");
+    setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+  };
+
   return (
-    <section className="relative w-full bg-gradient-to-br from-gray-100 to-white py-24 px-4">
-      <div className="absolute inset-0">
-        <img
-          src="/images/Branding/bg-contacto.webp"
-          alt="Fondo contacto"
-          className="w-full h-full object-cover opacity-20"
-        />
-      </div>
+    <section
+      className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
+      style={{ backgroundImage: "url('public/images/Branding/apoyo (3).webp')" }}
+    >
+      <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-2">
-          ¿Empezamos hoy mismo a resolver tu situación legal?
+          ¿Empezamos hoy mismo a resolver tu situación?
         </h2>
         <p className="text-center text-gray-700 mb-10">
           Contáctanos y te responderemos en menos de 24 horas.
         </p>
 
-        <form className="grid grid-cols-1 gap-6">
+        <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Nombre completo
             </label>
             <input
               type="text"
+              name="nombre"
+              value={formData.nombre}
+              onChange={handleChange}
               required
               className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
             />
@@ -40,6 +74,9 @@ const Contacto = () => {
             </label>
             <input
               type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
               required
               className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
             />
@@ -51,6 +88,9 @@ const Contacto = () => {
             </label>
             <input
               type="tel"
+              name="telefono"
+              value={formData.telefono}
+              onChange={handleChange}
               className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
             />
           </div>
@@ -60,11 +100,17 @@ const Contacto = () => {
               Mensaje
             </label>
             <textarea
+              name="mensaje"
+              value={formData.mensaje}
+              onChange={handleChange}
               rows="4"
               required
               className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
             ></textarea>
           </div>
+
+          {error && <p className="text-red-600 text-sm">{error}</p>}
+          {success && <p className="text-green-600 text-sm">{success}</p>}
 
           <button
             type="submit"
