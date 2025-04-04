@@ -7,21 +7,21 @@ const AreasServicios = () => {
   const servicios = [
     {
       slug: "laboral",
-      imagen: "public/images/Branding/apoyo1.webp",
+      imagen: "/images/Branding/apoyo1.webp",
       titulo: "Asesoría Laboral",
       descripcion:
         "Gestión integral de relaciones laborales, contratos, nóminas, despidos y prevención de riesgos.",
     },
     {
       slug: "legal",
-      imagen: "public/images/Branding/apoyo2.webp",
+      imagen: "/images/Branding/apoyo2.webp",
       titulo: "Asesoría Legal Mercantil",
       descripcion:
         "Constitución de sociedades, contratos mercantiles, cumplimiento normativo y protección jurídica.",
     },
     {
       slug: "fiscal",
-      imagen: "public/images/Branding/apoyo3.webp",
+      imagen: "/images/Branding/apoyo3.webp",
       titulo: "Asesoría Fiscal y Contable",
       descripcion:
         "Planificación fiscal, contabilidad empresarial, impuestos, balances y auditoría.",

@@ -14,6 +14,7 @@ import Contacto from "./pages/contacto";
 import ScrollToTop from "./components/ScrollToTop";
 import Nosotros from "./pages/Nosotros";
 import Servicios from "./pages/Servicios";
+import Oficinas from "./pages/Oficinas";
 
 function App() {
   return (
@@ -30,6 +31,12 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/servicios" element={<Servicios />} />
+        <Route path="/politicas-cookies" element={<Servicios />} />
+        <Route path="/politicas-privacidad" element={<Servicios />} />
+        <Route path="/legal" element={<Servicios />} />
+        <Route path="/oficinas" element={<Oficinas />} />
+        
+        
       </Routes>
       <Footer/>
     </Router>

@@ -26,7 +26,7 @@ const servicios = [
     titulo: "Asesoría Integral",
     descripcion:
       "Servicio completo para empresas y autónomos: fiscal, contable, laboral y legal en un solo despacho.",
-    url: "/contacto",
+    url: "/paquetes",
   },
   {
     titulo: "Kit Fiscal Autónomos",
@@ -64,6 +64,19 @@ const servicios = [
       "Asistencia civil para residentes en España con obligaciones fiscales.",
     url: "/paquetes",
   },
+  {
+    titulo: "Servicio Personalizado 1",
+    descripcion:
+      "Asistencia Personalizado 1 aqui añadimos los servicios que queramos.",
+    url: "/paquetes",
+  },
+  {
+    titulo: "Servicio Personalizado 2",
+    descripcion:
+      "Asistencia Personalizado 2 aqui añadimos los servicios que queramos.",
+    url: "/paquetes",
+  },
+ 
 ];
 
 const Servicios = () => {
