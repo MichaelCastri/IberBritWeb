@@ -64,17 +64,32 @@ const Estadisticas = () => {
 
     return () => observer.disconnect();
   }, []);
+  const imagePaths = [
+    "/images/fotoscartagenas/Apoyo4.webp",
+    "/images/fotoscartagenas/Apoyo5.webp",
+    "/images/fotoscartagenas/Apoyo1.webp",
+    "/images/fotoscartagenas/Apoyo2.webp",
+    "/images/fotoscartagenas/Apoyo6.webp",
+  ]
+  const [currentIndex, setCurrentIndex] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagePaths.length)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [])
 
   return (
     <section
       ref={sectionRef}
       className="w-full bg-gradient-to-br from-white to-gray-50 py-24 px-4 text-cafeOscuro"
-    >
+      style={{ backgroundImage: `url(${imagePaths[currentIndex]})` }}>
       <div className="max-w-6xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+        <h2 className="text-3xl shadow-2xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
           Confianza construida con resultados reales
         </h2>
-        <p className="text-gray-700 mb-16 max-w-2xl mx-auto">
+        <p className="text-white shadow-2xl mb-16 max-w-2xl mx-auto">
           Cada número representa una historia de éxito legal, una empresa que
           confió en nuestro despacho, o un residente que encontró tranquilidad
           fiscal. Estas cifras son nuestra mejor carta de presentación.
@@ -99,7 +114,7 @@ const Estadisticas = () => {
         </div>
 
         <div className="mt-16">
-          <p className="text-lg font-medium mb-4">
+          <p className="text-lg text-white font-medium mb-4">
             ¿Quieres formar parte de estas cifras?
           </p>
           <button

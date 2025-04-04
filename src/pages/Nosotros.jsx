@@ -69,12 +69,12 @@ const Nosotros = () => {
       <Equipo />
 
       {/* Sección: ¿Quieres trabajar con nosotros? */}
-      <section className="w-full bg-rojoIber2 text-white py-20 px-6 text-center">
+      <section className="w-full bg-rojoIber2 text-black py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">¿Quieres trabajar con nosotros?</h2>
           <p className="text-lg mb-6">
             En Iberbrit estamos en constante crecimiento. Si compartes nuestros valores y tienes pasión por el servicio
-            jurídico y fiscal, queremos conocerte.
+            jurídico, fiscal o económico queremos conocerte.
           </p>
           <a
             href="/contacto"

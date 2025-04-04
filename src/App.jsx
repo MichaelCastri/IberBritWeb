@@ -13,6 +13,7 @@ import Footer from "./components/Footer";
 import Contacto from "./pages/contacto";
 import ScrollToTop from "./components/ScrollToTop";
 import Nosotros from "./pages/Nosotros";
+import Servicios from "./pages/Servicios";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/paquetes" element={<Paquetes />} />
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
+        <Route path="/servicios" element={<Servicios />} />
       </Routes>
       <Footer/>
     </Router>

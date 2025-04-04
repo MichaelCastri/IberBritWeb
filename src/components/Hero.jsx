@@ -1,7 +1,6 @@
-
-
 import { useState, useEffect } from "react"
 import { Button } from "./button"
+import { Link } from "react-router-dom" // 👈 Importar Link de react-router-dom
 
 export default function Hero() {
   const imagePaths = [
@@ -37,9 +36,13 @@ export default function Hero() {
                 Desde 2002, ofrecemos servicios de asesoramiento integral a emprendedores, autónomos, sociedades y no
                 residentes en España.
               </p>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg">Solicitar información</Button>
-                <Button variant="outline" size="lg">Nuestros servicios</Button>
+              <div className="flex flex-col text-white gap-2 min-[400px]:flex-row">
+                <Link to="/contacto">
+                  <Button size="lg" className="w-full min-[400px]:w-auto">Solicitar información</Button>
+                </Link>
+                <Link to="/servicios">
+                  <Button variant="outline " size="lg" className="text-white w-full min-[400px]:w-auto">Nuestros servicios</Button>
+                </Link>
               </div>
             </div>
             <div className="flex justify-center">

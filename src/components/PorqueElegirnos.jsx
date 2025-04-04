@@ -67,7 +67,7 @@ const PorqueElegirnos = () => {
         </div>
 
         <div className="mt-12">
-          <p className="text-lg font-medium mb-4">
+          <p className="text-lg text-black font-medium mb-4">
             Tu tranquilidad es nuestra prioridad.
           </p>
           <button

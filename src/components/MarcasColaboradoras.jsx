@@ -12,29 +12,30 @@ const marcas = [
 ];
 
 const MarcasColaboradoras = () => {
-  return (
+return (
     <section className="w-full bg-gray-900 py-5 px-4">
-      <div className="max-w-6xl mx-auto text-center">
-      <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10">
-  Marcas que confían en Iber
-  <span style={{ color: "#991b1b" }}>brit</span>
+        <div className="max-w-6xl mx-auto text-center">
+            <h2>Marcas que confían en</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold text-white mb-10 font-['Merriweather']">
+ Iber
+<span style={{ color: "#991b1b" }}>brit</span>
 </h2>
 
-        <div className="overflow-hidden relative">
-          <div className="flex gap-12 animate-marquee w-max">
-            {[...marcas, ...marcas].map((src, index) => (
-              <img
-                key={index}
-                src={src}
-                alt={`Marca ${index + 1}`}
-                className="h-16 sm:h-20 object-contain"
-              />
-            ))}
-          </div>
+            <div className="overflow-hidden relative">
+                <div className="flex gap-12 animate-marquee w-max">
+                    {[...marcas, ...marcas].map((src, index) => (
+                        <img
+                            key={index}
+                            src={src}
+                            alt={`Marca ${index + 1}`}
+                            className="h-16 sm:h-20 object-contain"
+                        />
+                    ))}
+                </div>
+            </div>
         </div>
-      </div>
     </section>
-  );
+);
 };
 
 export default MarcasColaboradoras;
