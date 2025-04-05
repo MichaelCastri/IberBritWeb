@@ -1,27 +1,28 @@
-import { useState, useEffect } from "react"
-import { Button } from "./button"
-import { Link } from "react-router-dom" // 👈 Importar Link de react-router-dom
+import { useState, useEffect } from "react";
+import { Button } from "./button";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // 👈 Importar useTranslation
 
 export default function Hero() {
+  const { t } = useTranslation(); // 👈 Inicializar traducción
   const imagePaths = [
     "/images/fotoscartagenas/Apoyo4.webp",
     "/images/Branding/2.webp",
     "/images/fotoscartagenas/Apoyo1.webp",
     "/images/fotoscartagenas/Apoyo2.webp",
     "/images/fotoscartagenas/Apoyo3.webp",
-  ]
-  const [currentIndex, setCurrentIndex] = useState(0)
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagePaths.length)
-    }, 4000)
-    return () => clearInterval(interval)
-  }, [])
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % imagePaths.length);
+    }, 4000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <main className="flex-1">
-      {/* Hero con fondo dinámico y texto visible */}
       <section
         className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{ backgroundImage: `url(${imagePaths[currentIndex]})` }}
@@ -30,18 +31,21 @@ export default function Hero() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h1 className="font-opensans text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
-                Asesoría Legal, Fiscal, Contable y Laboral para Empresas y Particulares
+                {t('home.hero.titulo')}
               </h1>
               <p className="font-merriweather max-w-[600px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Desde 2002, ofrecemos servicios de asesoramiento integral a emprendedores, autónomos, sociedades y no
-                residentes en España.
+                {t('home.hero.descripcion')}
               </p>
               <div className="flex flex-col text-white gap-2 min-[400px]:flex-row">
                 <Link to="/contacto">
-                  <Button size="lg" className="w-full min-[400px]:w-auto">Solicitar información</Button>
+                  <Button size="lg" className="w-full min-[400px]:w-auto">
+                    {t('home.hero.botonInformacion')}
+                  </Button>
                 </Link>
                 <Link to="/servicios">
-                  <Button variant="outline " size="lg" className="text-white w-full min-[400px]:w-auto">Nuestros servicios</Button>
+                  <Button variant="outline" size="lg" className="text-white w-full min-[400px]:w-auto">
+                    {t('home.hero.botonServicios')}
+                  </Button>
                 </Link>
               </div>
             </div>
@@ -56,5 +60,5 @@ export default function Hero() {
         </div>
       </section>
     </main>
-  )
+  );
 }

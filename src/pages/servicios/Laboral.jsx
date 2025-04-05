@@ -1,18 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Helmet } from "react-helmet";
 
 const Laboral = () => {
   return (
     <main className="w-full bg-white text-cafeOscuro">
-      <Helmet>
-        <title>Asesoría Laboral para Empresas y Autónomos | Iberbrit</title>
-        <meta name="description" content="Gestionamos contratos, nóminas, Seguridad Social y representación ante inspecciones. Asesoría laboral especializada para empresas y autónomos." />
-        <meta name="keywords" content="asesoría laboral, contratos, nóminas, Seguridad Social, inspecciones laborales, Iberbrit asesoría" />
-        <meta name="author" content="Iberbrit Economistas y Abogados" />
-        <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="https://iberbrit.com/servicios/laboral" />
-      </Helmet>
 
       {/* Hero con fondo */}
       <section

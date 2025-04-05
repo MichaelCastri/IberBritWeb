@@ -1,0 +1,131 @@
+{
+  "home": {
+    "hero": {
+      "titulo": "Asesoría Legal, Fiscal, Contable y Laboral para Empresas y Particulares",
+      "descripcion": "Desde 2002, ofrecemos servicios de asesoramiento integral a emprendedores, autónomos, sociedades y no residentes en España.",
+      "botonInformacion": "Solicitar información",
+      "botonServicios": "Nuestros servicios"
+    },
+    "areas": {
+      "titulo": "ÁREAS Y SERVICIOS",
+      "laboral": {
+        "titulo": "Asesoría Laboral",
+        "descripcion": "Gestión integral de relaciones laborales, contratos, nóminas, despidos y prevención de riesgos."
+      },
+      "legal": {
+        "titulo": "Asesoría Legal Mercantil",
+        "descripcion": "Constitución de sociedades, contratos mercantiles, cumplimiento normativo y protección jurídica."
+      },
+      "fiscal": {
+        "titulo": "Asesoría Fiscal y Contable",
+        "descripcion": "Planificación fiscal, contabilidad empresarial, impuestos, balances y auditoría."
+      }
+    }
+  },
+  "contacto": {
+    "titulo": "¿Empezamos hoy mismo a resolver tu situación?",
+    "descripcion": "Contáctanos y te responderemos en menos de 24 horas.",
+    "botonEnviar": "Enviar consulta"
+  },
+  "navbar": {
+    "servicios": "Servicios",
+    "nosotros": "Nosotros",
+    "contacto": "Contacto",
+    "paquetes": "Paquetes",
+    "oficinas": "Oficinas",
+    "llamanos": "Llámanos"
+  }, 
+  "kits": {
+    "titulo": "Nuestros Kits de Asesoramiento",
+    "popular": "El más popular",
+    "verMas": "...ver más en la sección de paquetes",
+    "solicitarInformacion": "Solicitar información",
+    "verTodos": "Ver todos los paquetes de asesoramiento",
+    "autonomo": {
+      "nombre": "Kit Autónomo",
+      "descripcion": "Para autónomos que buscan una solución completa para sus obligaciones fiscales y tributarias.",
+      "beneficios": [
+        "Planificaciones tributarias",
+        "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
+        "Declaraciones informativas anuales",
+        "Presentaciones telemáticas",
+        "Certificados tributarios",
+        "Atención de requerimientos",
+        "Aplazamientos y fraccionamientos",
+        "Libros-Registro Ley IVA"
+      ]
+    },
+    "sociedades": {
+      "nombre": "Kit Fiscal Sociedades",
+      "descripcion": "Para sociedades mercantiles y patrimoniales que requieren planificación fiscal y contabilidad integral.",
+      "beneficios": [
+        "Planificaciones y pre-cierres",
+        "Declaraciones fiscales completas",
+        "Contabilidad mensual",
+        "Depósito de cuentas anuales",
+        "Implantación del plan contable",
+        "Consultas fiscales y contables"
+      ]
+    },
+    "noResidentes": {
+      "nombre": "Kit No Residentes",
+      "descripcion": "Para no residentes con obligaciones fiscales en España: IRNR, IBI/SUMA, representación y más.",
+      "beneficios": [
+        "Estudio fiscal personalizado",
+        "Pre-cálculo y presentación IRNR",
+        "Gestión del IBI / SUMA",
+        "Representación ante Hacienda",
+        "Consultoría continua"
+      ]
+    }
+  },
+  "porqueElegirnos": {
+    "titulo": "¿Por qué elegir Iberbrit?",
+    "tranquilidad": "Tu tranquilidad es nuestra prioridad.",
+    "solicitar": "Solicita tu primera asesoría",
+    "razones": [
+      {
+        "titulo": "Éxito garantizado",
+        "descripcion": "Más del 98% de nuestros clientes cumplen sus objetivos fiscales y legales gracias a nuestra asesoría estratégica."
+      },
+      {
+        "titulo": "Más de 15 años de experiencia",
+        "descripcion": "Hemos asesorado a autónomos, sociedades y familias en España con casos reales, complejos y exigentes."
+      },
+      {
+        "titulo": "Acompañamiento personalizado",
+        "descripcion": "No eres un expediente más. Tu asesor está contigo, conoce tu negocio y habla tu idioma."
+      },
+      {
+        "titulo": "Compromiso con los plazos",
+        "descripcion": "Cumplimos rigurosamente con las fechas de impuestos, trámites legales y obligaciones contables."
+      },
+      {
+        "titulo": "Transparencia total",
+        "descripcion": "Informes claros, seguimiento permanente y tarifas sin sorpresas."
+      },
+      {
+        "titulo": "Cobertura nacional e internacional",
+        "descripcion": "Atendemos clientes residentes y no residentes con obligaciones en territorio español."
+      }
+    ]
+  }, 
+  "estadisticas": {
+    "titulo": "Confianza construida con resultados reales",
+    "descripcion": "Cada número representa una historia de éxito legal, una empresa que confió en nuestro despacho, o un residente que encontró tranquilidad fiscal. Estas cifras son nuestra mejor carta de presentación.",
+    "clientes": "Clientes Satisfechos",
+    "anios": "Años Brindando Servicio",
+    "operaciones": "Operaciones Firmadas",
+    "paises": "Países Asesorados",
+    "cta": "¿Quieres formar parte de estas cifras?",
+    "boton": "Solicita una reunión"
+  }, 
+  "testimonios": {
+    "titulo": "Lo que dicen nuestros clientes",
+    "sandra": "Lo único transparente por la zona. Vine de una muy mala experiencia por otro administrador de la zona y me salvaron la vida. ¡Muy profesionales! Se ponen en la piel del otro, te aconsejan, te ayudan y no te timan. Mi consejo: ¡ponte en sus manos!",
+    "javier": "Un equipo muy profesional y un trato excelente. Declaración de renta impecable. También me asesoraron en temas legales de manera clara y precisa. Muy recomendable.",
+    "lau": "Quería iniciar mi actividad comercial, pero el proceso me parecía complicado. Me asesoraron en cada paso, explicándome todo con claridad. Gracias a todo el equipo!",
+    "boton": "Ver más reseñas en Google"
+  }
+  
+}

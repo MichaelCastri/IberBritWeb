@@ -19,7 +19,7 @@ const equipo = [
     { nombre: "Alberto Valera", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Alberto.webp" },
     { nombre: "Pilar Lorente", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Pilar.webp" },
     { nombre: "Kelly Lindsay", cargo: "Socia Fundadora", especialidad: "Asesoría Fiscal y Contable", imagen: "/images/Iberbrit blanco/Kelly.webp" },
-    { nombre: "Jonathan lindsay ", cargo: "Abogado Senior", especialidad: "Derecho Mercantil y Laboral", imagen: "/images/Iberbrit blanco/John.webp" },
+    { nombre: "Jonathan lindsay ", cargo: "Socio Fundador", especialidad: "Derecho Mercantil y Laboral", imagen: "/images/Iberbrit blanco/John.webp" },
     { nombre: "Por Preguntar", cargo: "Consultora Jurídica", especialidad: "Clientes No Residentes", imagen: "/images/equipo/laura.webp" },
     { nombre: "Tomas Gutierrez", cargo: "Asistente Legal", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
     { nombre: "Michael Castrillon", cargo: "IT Manager", especialidad: "", imagen: "/images/Iberbrit blanco/Iberbrit.webp" },

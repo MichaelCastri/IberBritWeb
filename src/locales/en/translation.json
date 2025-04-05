@@ -1,0 +1,132 @@
+{
+  "home": {
+    "hero": {
+      "titulo": "Legal, Tax, Accounting, and Labor Consulting for Companies and Individuals",
+      "descripcion": "Since 2002, we have been offering comprehensive advisory services to entrepreneurs, freelancers, companies, and non-residents in Spain.",
+      "botonInformacion": "Request Information",
+      "botonServicios": "Our Services"
+    },
+    "areas": {
+      "titulo": "AREAS AND SERVICES",
+      "laboral": {
+        "titulo": "Labor Advisory",
+        "descripcion": "Comprehensive management of labor relations, contracts, payrolls, dismissals, and risk prevention."
+      },
+      "legal": {
+        "titulo": "Business Legal Advisory",
+        "descripcion": "Company incorporation, commercial contracts, regulatory compliance, and legal protection."
+      },
+      "fiscal": {
+        "titulo": "Tax and Accounting Advisory",
+        "descripcion": "Tax planning, business accounting, taxes, balance sheets, and auditing."
+      }
+    },
+    "contacto": {
+      "titulo": "Shall we start solving your situation today?",
+      "descripcion": "Contact us and we will reply within 24 hours.",
+      "botonEnviar": "Send inquiry"
+    }
+  },
+  "navbar": {
+    "servicios": "Services",
+    "nosotros": "About Us",
+    "contacto": "Contact",
+    "paquetes": "Packages",
+    "oficinas": "Offices",
+    "llamanos": "Call Us"
+  },
+  
+"kits": {
+    "titulo": "Our Advisory Kits",
+    "popular": "Most Popular",
+    "verMas": "...see more in the packages section",
+    "solicitarInformacion": "Request information",
+    "verTodos": "See all advisory packages",
+    "autonomo": {
+      "nombre": "Freelancer Kit",
+      "descripcion": "For freelancers seeking a complete solution for their tax and fiscal obligations.",
+      "beneficios": [
+        "Tax planning",
+        "Tax declarations: VAT, Census, IAE, Withholdings, IRPF",
+        "Annual informative declarations",
+        "Online tax submissions",
+        "Tax certificates",
+        "Requirement attention",
+        "Debt deferments and installment payments",
+        "VAT Book Records"
+      ]
+    },
+    "sociedades": {
+      "nombre": "Corporate Fiscal Kit",
+      "descripcion": "For commercial and patrimonial companies requiring tax planning and integral accounting.",
+      "beneficios": [
+        "Tax planning and pre-closings",
+        "Complete tax filings",
+        "Monthly accounting",
+        "Annual accounts deposit",
+        "Accounting plan implementation",
+        "Tax and accounting consultations"
+      ]
+    },
+    "noResidentes": {
+      "nombre": "Non-Residents Kit",
+      "descripcion": "For non-residents with tax obligations in Spain: IRNR, IBI/SUMA, and representation.",
+      "beneficios": [
+        "Personalized tax study",
+        "Pre-calculation and filing of IRNR",
+        "IBI/SUMA management",
+        "Representation before Tax Agency",
+        "Continuous consultancy"
+      ]
+    }
+  },
+  "porqueElegirnos": {
+    "titulo": "Why choose Iberbrit?",
+    "tranquilidad": "Your peace of mind is our priority.",
+    "solicitar": "Request your first consultation",
+    "razones": [
+      {
+        "titulo": "Guaranteed success",
+        "descripcion": "Over 98% of our clients achieve their fiscal and legal goals thanks to our strategic advice."
+      },
+      {
+        "titulo": "Over 15 years of experience",
+        "descripcion": "We have advised freelancers, companies, and families in Spain with real, complex, and demanding cases."
+      },
+      {
+        "titulo": "Personalized support",
+        "descripcion": "You are not just a file. Your advisor knows your business and speaks your language."
+      },
+      {
+        "titulo": "Commitment to deadlines",
+        "descripcion": "We strictly meet tax dates, legal procedures, and accounting obligations."
+      },
+      {
+        "titulo": "Total transparency",
+        "descripcion": "Clear reports, permanent follow-up, and no surprise fees."
+      },
+      {
+        "titulo": "National and international coverage",
+        "descripcion": "We serve resident and non-resident clients with obligations in Spain."
+      }
+    ]
+  }, 
+  "estadisticas": {
+    "titulo": "Trust built with real results",
+    "descripcion": "Each number represents a legal success story, a company that trusted our firm, or a resident who found tax peace of mind. These figures are our best introduction card.",
+    "clientes": "Satisfied Clients",
+    "anios": "Years of Service",
+    "operaciones": "Signed Operations",
+    "paises": "Countries Advised",
+    "cta": "Want to be part of these figures?",
+    "boton": "Request a meeting"
+  },
+  "testimonios": {
+    "titulo": "What our clients say",
+    "sandra": "The only transparent ones in the area. I came from a bad experience and they literally saved my life! Very professional. They empathize, advise, and genuinely help you. Highly recommended!",
+    "javier": "Very professional team and excellent service. My tax return was handled smoothly. Also received detailed legal advice. Highly recommended for anyone seeking solutions.",
+    "lau": "I wanted to start my business but the process seemed complicated. They guided me through every step with clarity. Thanks to the whole team!",
+    "boton": "See more reviews on Google"
+  }
+
+}

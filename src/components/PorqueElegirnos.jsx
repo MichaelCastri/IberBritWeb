@@ -3,48 +3,19 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
-
-const razones = [
-  {
-    titulo: "Éxito garantizado",
-    descripcion:
-      "Más del 98% de nuestros clientes cumplen sus objetivos fiscales y legales gracias a nuestra asesoría estratégica.",
-  },
-  {
-    titulo: "Más de 15 años de experiencia",
-    descripcion:
-      "Hemos asesorado a autónomos, sociedades y familias en España con casos reales, complejos y exigentes.",
-  },
-  {
-    titulo: "Acompañamiento personalizado",
-    descripcion:
-      "No eres un expediente más. Tu asesor está contigo, conoce tu negocio y habla tu idioma.",
-  },
-  {
-    titulo: "Compromiso con los plazos",
-    descripcion:
-      "Cumplimos rigurosamente con las fechas de impuestos, trámites legales y obligaciones contables.",
-  },
-  {
-    titulo: "Transparencia total",
-    descripcion:
-      "Informes claros, seguimiento permanente y tarifas sin sorpresas.",
-  },
-  {
-    titulo: "Cobertura nacional e internacional",
-    descripcion:
-      "Atendemos clientes residentes y no residentes con obligaciones en territorio español.",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const PorqueElegirnos = () => {
+  const { t } = useTranslation(); // 👈 Activamos traducciones
   const navigate = useNavigate();
+
+  const razones = t("porqueElegirnos.razones", { returnObjects: true });
 
   return (
     <section className="w-full bg-white py-24 px-4 text-cafeOscuro">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 text-gray-900">
-          ¿Por qué elegir Iberbrit?
+          {t("porqueElegirnos.titulo")}
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
@@ -68,13 +39,13 @@ const PorqueElegirnos = () => {
 
         <div className="mt-12">
           <p className="text-lg text-black font-medium mb-4">
-            Tu tranquilidad es nuestra prioridad.
+            {t("porqueElegirnos.tranquilidad")}
           </p>
           <button
             onClick={() => navigate("/contacto")}
             className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-rojoIber1 transition"
           >
-            Solicita tu primera asesoría
+            {t("porqueElegirnos.solicitar")}
           </button>
         </div>
       </div>
