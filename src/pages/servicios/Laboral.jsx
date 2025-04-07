@@ -1,125 +1,146 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Briefcase, FileCheck, ShieldCheck } from "lucide-react";
 
 const Laboral = () => {
   return (
     <main className="w-full bg-white text-cafeOscuro">
 
-      {/* Hero con fondo */}
+      {/* HERO CON FONDO */}
       <section
-        className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat relative"
+        className="w-full py-24 bg-cover bg-center bg-no-repeat relative"
         style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo1.avif')" }}
       >
-        <div className="bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+        <div className="bg-white/90 backdrop-blur-sm p-8 md:p-16 rounded-2xl shadow-lg max-w-6xl mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Asesoría Laboral Integral
           </h1>
-          <p className="text-lg text-gray-700 text-center">
-            Protege tu empresa y asegura el cumplimiento laboral con nuestro equipo experto. Gestión completa de nóminas, contratos, Seguridad Social e inspecciones.
+          <p className="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+            Protege tu empresa y asegura el cumplimiento legal con expertos en contratación, nóminas, Seguridad Social e inspecciones.
           </p>
         </div>
       </section>
 
-      {/* ¿Qué incluye nuestra asesoría laboral? */}
-      <section className="max-w-6xl mx-auto py-16 px-6">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-          ¿Qué incluye nuestra asesoría laboral?
-        </h2>
-        <ul className="text-gray-700 text-lg leading-relaxed list-disc list-inside space-y-3">
-          <li>Asesoramiento en contratación laboral y modalidades de contrato.</li>
-          <li>Confección de nóminas, seguros sociales y finiquitos.</li>
-          <li>Altas, bajas y variaciones en la Seguridad Social.</li>
-          <li>Representación ante inspecciones de trabajo.</li>
-          <li>Gestión de despidos y expedientes disciplinarios.</li>
-          <li>Consultoría en prevención de riesgos laborales.</li>
+      {/* QUÉ INCLUYE */}
+      <section className="max-w-6xl mx-auto py-24 px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4">¿Qué incluye nuestra asesoría laboral?</h2>
+          <p className="text-gray-600">Servicios diseñados para garantizar tu tranquilidad y la de tu equipo.</p>
+        </div>
+        <ul className="grid gap-6 md:grid-cols-2 list-none">
+          {[
+            "Asesoramiento en contratación y modalidades de contrato.",
+            "Confección de nóminas, seguros sociales y finiquitos.",
+            "Altas, bajas y modificaciones en la Seguridad Social.",
+            "Representación ante inspecciones de trabajo.",
+            "Gestión de despidos y expedientes disciplinarios.",
+            "Consultoría en prevención de riesgos laborales.",
+          ].map((item, idx) => (
+            <li key={idx} className="flex items-start gap-4 text-gray-700">
+              <Briefcase className="text-rojoIber2 mt-1 w-5 h-5" />
+              <span>{item}</span>
+            </li>
+          ))}
         </ul>
       </section>
 
-      {/* Beneficios de nuestra asesoría */}
-      <section className="bg-gray-50 py-16 px-6">
+      {/* BENEFICIOS */}
+      <section className="bg-gray-50 py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-            Beneficios de confiar en Iberbrit
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div>
-              <p className="text-gray-700 mb-4">
-                Cumple con toda la legislación laboral vigente y evita sanciones o problemas legales. Te asesoramos en cada paso, protegiendo tanto tus intereses como los de tus empleados.
+          <div className="text-center mb-16">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">Beneficios de trabajar con Iberbrit</h2>
+            <p className="text-gray-600">Asegura estabilidad laboral, evita riesgos y protege tus intereses empresariales.</p>
+          </div>
+          <div className="grid gap-12 md:grid-cols-2">
+            <div className="space-y-6">
+              <p className="text-gray-700">
+                Cumple de forma rigurosa con toda la legislación laboral vigente y evita sanciones o conflictos innecesarios.
               </p>
               <p className="text-gray-700">
-                Ahorrarás tiempo, reducirás riesgos laborales y garantizarás estabilidad en tu organización.
+                Nuestro equipo actúa de forma preventiva y asesora en la optimización de tus recursos humanos.
               </p>
             </div>
-            <div>
-              <p className="text-gray-700 mb-4">
-                Confía en un equipo que se anticipa a los cambios normativos y te proporciona soluciones eficaces adaptadas a tu negocio.
+            <div className="space-y-6">
+              <p className="text-gray-700">
+                Defendemos tus intereses ante la Inspección de Trabajo y garantizamos procedimientos laborales seguros.
               </p>
               <p className="text-gray-700">
-                Iberbrit es sinónimo de experiencia, transparencia y compromiso en materia laboral.
+                En Iberbrit ofrecemos compromiso, confidencialidad y soluciones a medida para tu empresa.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Cómo trabajamos */}
-      <section className="max-w-6xl mx-auto py-16 px-6">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
-          ¿Cómo trabajamos contigo?
-        </h2>
-        <ol className="text-gray-700 text-lg list-decimal list-inside space-y-3">
-          <li>Analizamos la situación laboral actual de tu empresa.</li>
-          <li>Detectamos necesidades y optimizamos recursos humanos.</li>
-          <li>Implantamos procesos seguros y eficientes en materia laboral.</li>
-          <li>Realizamos un seguimiento continuo y actualizaciones normativas.</li>
-          <li>Te representamos en todo momento ante la Seguridad Social e Inspección de Trabajo.</li>
+      {/* CÓMO TRABAJAMOS */}
+      <section className="max-w-6xl mx-auto py-24 px-6">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-4">¿Cómo trabajamos contigo?</h2>
+        </div>
+        <ol className="list-decimal list-inside text-lg text-gray-700 space-y-4">
+          {[
+            "Análisis de la situación laboral actual de tu empresa.",
+            "Detección de riesgos y oportunidades de mejora.",
+            "Diseño e implementación de estrategias laborales seguras.",
+            "Actualización continua y seguimiento normativo.",
+            "Representación y defensa ante organismos laborales.",
+          ].map((step, idx) => (
+            <li key={idx}>{step}</li>
+          ))}
         </ol>
       </section>
 
-      {/* Diferencias con otros despachos */}
-      <section className="bg-gray-50 py-16 px-6">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
+      {/* DIFERENCIA */}
+      <section
+        className="w-full py-24 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo1.avif')" }}
+      >
+        <div className="max-w-6xl mx-auto text-center">
+          
+          <div className="bg-white p-8 rounded-2xl shadow-md text-gray-700 text-lg space-y-6">
+          <h2 className="text-3xl font-semibold text-gray-900 mb-8">
             ¿Por qué elegir Iberbrit para tu asesoría laboral?
           </h2>
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            No solo resolvemos trámites. Construimos una estrategia laboral sólida y de futuro para tu empresa. Detectamos oportunidades de ahorro en costes laborales y maximizamos tu seguridad jurídica.
-          </p>
-          <p className="text-gray-700 text-lg leading-relaxed">
-            Nuestra asesoría laboral es proactiva, cercana y 100% adaptada a la normativa española vigente.
-          </p>
+            <p>
+              No solo resolvemos trámites. Construimos una estrategia laboral robusta, optimizando costes y asegurando el cumplimiento de tus obligaciones.
+            </p>
+            <p>
+              Nuestra asesoría es proactiva, cercana y completamente adaptada a las necesidades de tu empresa.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="max-w-6xl mx-auto py-16 px-6">
-        <h2 className="text-3xl font-semibold text-gray-900 mb-6 text-center">
+      <section className="max-w-6xl mx-auto py-24 px-6">
+        <h2 className="text-3xl font-semibold text-gray-900 text-center mb-12">
           Preguntas frecuentes sobre asesoría laboral
         </h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="font-bold text-gray-800">¿Qué documentación necesito para contratar empleados?</h3>
-            <p className="text-gray-700">
-              Documento de identidad del trabajador, número de afiliación a la Seguridad Social y contrato firmado.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-gray-800">¿Qué incluye una inspección de trabajo?</h3>
-            <p className="text-gray-700">
-              Revisión de contratos, cumplimiento de cotizaciones, condiciones laborales y prevención de riesgos.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-bold text-gray-800">¿Qué sucede si recibo una sanción?</h3>
-            <p className="text-gray-700">
-              En Iberbrit te asistimos en la defensa y, en su caso, en la tramitación de recursos ante la Inspección de Trabajo.
-            </p>
-          </div>
+        <div className="grid gap-8">
+          {[
+            {
+              q: "¿Qué documentación necesito para contratar empleados?",
+              a: "Documento de identidad del trabajador, número de afiliación a la Seguridad Social y contrato firmado.",
+            },
+            {
+              q: "¿Qué incluye una inspección de trabajo?",
+              a: "Revisión de contratos, cumplimiento de cotizaciones, prevención de riesgos laborales y condiciones de los trabajadores.",
+            },
+            {
+              q: "¿Qué hago si recibo una sanción laboral?",
+              a: "Nuestro equipo te asiste en la defensa, asesoramiento legal y tramitación de recursos ante la Inspección de Trabajo.",
+            },
+          ].map((faq, idx) => (
+            <div key={idx}>
+              <h3 className="font-bold text-gray-800">{faq.q}</h3>
+              <p className="text-gray-700">{faq.a}</p>
+            </div>
+          ))}
         </div>
       </section>
 
-      {/* CTA final */}
-      <section className="text-center py-16">
+      {/* CTA FINAL */}
+      <section className="text-center py-24">
         <h2 className="text-3xl font-bold text-gray-900 mb-6">
           ¿Quieres garantizar la tranquilidad laboral de tu empresa?
         </h2>
@@ -130,6 +151,7 @@ const Laboral = () => {
           Solicita una consulta gratuita
         </Link>
       </section>
+
     </main>
   );
 };

@@ -12,7 +12,7 @@ const Servicios = () => {
       {/* HERO CON FONDO DINÁMICO */}
       <section
         className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat relative"
-        style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo1.avif')" }}
+        style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo5.avif')" }}
       >
         <div className="bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
           <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
