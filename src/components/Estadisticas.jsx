@@ -45,11 +45,11 @@ const Estadisticas = () => {
   ];
 
   const imagePaths = [
-    "/images/fotoscartagenas/Apoyo4.webp",
-    "/images/fotoscartagenas/Apoyo5.webp",
-    "/images/fotoscartagenas/Apoyo1.webp",
-    "/images/fotoscartagenas/Apoyo2.webp",
-    "/images/fotoscartagenas/Apoyo6.webp",
+    "/images/fotoscartagenas/Apoyo4.avif",
+    "/images/fotoscartagenas/Apoyo5.avif",
+    "/images/fotoscartagenas/Apoyo1.avif",
+    "/images/fotoscartagenas/Apoyo2.avif",
+    "/images/fotoscartagenas/Apoyo6 (1).avif",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 

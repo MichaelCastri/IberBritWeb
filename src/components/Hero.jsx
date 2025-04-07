@@ -6,11 +6,11 @@ import { useTranslation } from "react-i18next"; // 👈 Importar useTranslation
 export default function Hero() {
   const { t } = useTranslation(); // 👈 Inicializar traducción
   const imagePaths = [
-    "/images/fotoscartagenas/Apoyo4.webp",
+    "/images/fotoscartagenas/Apoyo4.avif",
     "/images/Branding/2.webp",
-    "/images/fotoscartagenas/Apoyo1.webp",
-    "/images/fotoscartagenas/Apoyo2.webp",
-    "/images/fotoscartagenas/Apoyo3.webp",
+    "/images/fotoscartagenas/Apoyo1.avif",
+    "/images/fotoscartagenas/Apoyo2.avif",
+    "/images/fotoscartagenas/Apoyo3.avif",
   ];
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -51,8 +51,11 @@ export default function Hero() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/images/Branding/3.jpg"
+                src="/images/Branding/3.webp"
                 alt="Iberbrit-Legal Servicios"
+                loading="lazy"  // <-- AQUÍ
+                width="400"
+                height="400"
                 className="rounded-lg object-cover w-full max-w-md shadow-lg"
               />
             </div>

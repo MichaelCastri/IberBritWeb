@@ -127,6 +127,28 @@
     "javier": "Very professional team and excellent service. My tax return was handled smoothly. Also received detailed legal advice. Highly recommended for anyone seeking solutions.",
     "lau": "I wanted to start my business but the process seemed complicated. They guided me through every step with clarity. Thanks to the whole team!",
     "boton": "See more reviews on Google"
+  },
+  "nosotros": {
+    "quienesSomos": "Who are we?",
+    "subtitulo": "A firm with soul, where closeness and legal rigor come together to achieve extraordinary results.",
+    "descripcion": "Iberbrit was born with the vocation of being more than just a law firm: we are the strategic ally for those who need human, efficient, and personalized advice. Our team is made up of experts in law, taxation, and labor relations committed to your success.",
+    "origen": {
+      "titulo": "Our origin",
+      "texto": "Since 2002, Iberbrit has supported hundreds of entrepreneurs, individuals, and companies in their fiscal and legal processes, both in Spain and abroad. We started as a small office in Madrid and today we have a presence in several cities."
+    },
+    "valores": {
+      "titulo": "Our values",
+      "etica": "Professional ethics",
+      "trato": "Human and close treatment",
+      "compromiso": "Commitment to results",
+      "transparencia": "Transparency throughout the process",
+      "residentes": "Support for residents and non-residents"
+    },
+    "trabajaConNosotros": {
+      "titulo": "Would you like to work with us?",
+      "descripcion": "At Iberbrit we are constantly growing. If you share our values and have a passion for legal, fiscal, or economic services, we want to meet you.",
+      "boton": "Submit application"
+    }
   }
 
 }

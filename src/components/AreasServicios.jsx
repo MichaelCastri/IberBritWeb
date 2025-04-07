@@ -8,19 +8,19 @@ const AreasServicios = () => {
   const servicios = [
     {
       slug: "laboral",
-      imagen: "/images/Branding/apoyo1.webp",
+      imagen: "/images/fotoscartagenas/apoyo7.avif",
       titulo: t("home.areas.laboral.titulo"),
       descripcion: t("home.areas.laboral.descripcion"),
     },
     {
       slug: "legal",
-      imagen: "/images/Branding/apoyo2.webp",
+      imagen: "/images/fotoscartagenas/apoyo8.avif",
       titulo: t("home.areas.legal.titulo"),
       descripcion: t("home.areas.legal.descripcion"),
     },
     {
       slug: "fiscal",
-      imagen: "/images/Branding/apoyo3.webp",
+      imagen: "/images/fotoscartagenas/apoyo6.avif",
       titulo: t("home.areas.fiscal.titulo"),
       descripcion: t("home.areas.fiscal.descripcion"),
     },

@@ -126,6 +126,29 @@
     "javier": "Un equipo muy profesional y un trato excelente. Declaración de renta impecable. También me asesoraron en temas legales de manera clara y precisa. Muy recomendable.",
     "lau": "Quería iniciar mi actividad comercial, pero el proceso me parecía complicado. Me asesoraron en cada paso, explicándome todo con claridad. Gracias a todo el equipo!",
     "boton": "Ver más reseñas en Google"
+  },
+
+  "nosotros": {
+    "quienesSomos": "¿Quiénes somos?",
+    "subtitulo": "Un despacho con alma, donde la cercanía y el rigor legal se combinan para lograr resultados extraordinarios.",
+    "descripcion": "Iberbrit nace con la vocación de ser más que un despacho: somos el aliado estratégico de quienes necesitan asesoramiento humano, eficiente y personalizado. Nuestro equipo está formado por expertos en derecho, fiscalidad y relaciones laborales comprometidos con tu éxito.",
+    "origen": {
+      "titulo": "Nuestro origen",
+      "texto": "Desde 2002, Iberbrit ha acompañado a cientos de emprendedores, particulares y empresas en sus procesos fiscales y legales, tanto en España como en el extranjero. Comenzamos como un pequeño despacho en Madrid y hoy tenemos presencia en varias ciudades."
+    },
+    "valores": {
+      "titulo": "Nuestros valores",
+      "etica": "Ética profesional",
+      "trato": "Trato humano y cercano",
+      "compromiso": "Compromiso con el resultado",
+      "transparencia": "Transparencia en todo el proceso",
+      "residentes": "Atención a residentes y no residentes"
+    },
+    "trabajaConNosotros": {
+      "titulo": "¿Quieres trabajar con nosotros?",
+      "descripcion": "En Iberbrit estamos en constante crecimiento. Si compartes nuestros valores y tienes pasión por el servicio jurídico, fiscal o económico queremos conocerte.",
+      "boton": "Enviar solicitud"
+    }
   }
   
 }
