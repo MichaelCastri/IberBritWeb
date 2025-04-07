@@ -15,6 +15,9 @@ import ScrollToTop from "./components/ScrollToTop";
 import Nosotros from "./pages/Nosotros";
 import Servicios from "./pages/Servicios";
 import Oficinas from "./pages/Oficinas";
+import AvisoLegal from "./pages/AvisoLegal";
+import PoliticaCookies from "./pages/PoliticaCookies";
+import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 
 function App() {
   return (
@@ -31,9 +34,9 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/servicios" element={<Servicios />} />
-        <Route path="/politicas-cookies" element={<Servicios />} />
-        <Route path="/politicas-privacidad" element={<Servicios />} />
-        <Route path="/legal" element={<Servicios />} />
+        <Route path="/politicas-cookies" element={<PoliticaCookies/>} />
+        <Route path="/politicas-privacidad" element={<PoliticaPrivacidad />} />
+        <Route path="/legal" element={<AvisoLegal />} />
         <Route path="/oficinas" element={<Oficinas />} />
         
         
