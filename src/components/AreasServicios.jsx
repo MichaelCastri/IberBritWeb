@@ -40,6 +40,7 @@ const AreasServicios = () => {
               className="bg-white rounded-2xl shadow-lg overflow-hidden transition-transform duration-300 hover:-translate-y-1 block text-left"
             >
               <img
+                loading="lazy"
                 src={area.imagen}
                 alt={area.titulo}
                 className="w-full h-48 object-cover"

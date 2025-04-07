@@ -60,7 +60,7 @@ const Contacto = () => {
   return (
     <section
       className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
-      style={{ backgroundImage: "url('/images/Branding/apoyo (3).webp')" }}
+      style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo3.avif')" }}
     >
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 

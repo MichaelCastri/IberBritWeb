@@ -1,101 +1,34 @@
-// src/pages/Servicios.jsx
-
 import React from "react";
 import { Link } from "react-router-dom";
-
-const servicios = [
-  {
-    titulo: "Asesoría Fiscal y Contable",
-    descripcion:
-      "Optimiza tu carga tributaria con nuestros economistas expertos. Nos encargamos de tus impuestos, balances, libros contables y más.",
-    url: "/servicios/fiscal",
-  },
-  {
-    titulo: "Asesoría Laboral",
-    descripcion:
-      "Gestionamos contratos, nóminas, despidos y relaciones laborales de forma eficaz, segura y legal.",
-    url: "/servicios/laboral",
-  },
-  {
-    titulo: "Asesoría Legal Mercantil",
-    descripcion:
-      "Soluciones jurídicas para sociedades, contratos, constitución de empresas y cumplimiento normativo.",
-    url: "/servicios/legal",
-  },
-  {
-    titulo: "Asesoría Integral",
-    descripcion:
-      "Servicio completo para empresas y autónomos: fiscal, contable, laboral y legal en un solo despacho.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit Fiscal Autónomos",
-    descripcion:
-      "Tributación simplificada, libros IVA, IRPF, atención de requerimientos y más. Todo en manos de nuestros economistas.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit Fiscal Sociedades",
-    descripcion:
-      "Desde contabilidad interna hasta el Impuesto de Sociedades. Ideal para patrimoniales y PYMEs.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit Legal",
-    descripcion:
-      "Incluye defensa jurídica, revisión de contratos, constitución de sociedades y asistencia legal integral.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit No Residentes",
-    descripcion:
-      "Representación fiscal, IRNR, SUMA, IBI y atención personalizada para clientes internacionales.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit Residentes",
-    descripcion:
-      "Asistencia fiscal, legal y contable para residentes en España con obligaciones societarias.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Kit Sociedad Civil Fiscal",
-    descripcion:
-      "Asistencia civil para residentes en España con obligaciones fiscales.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Servicio Personalizado 1",
-    descripcion:
-      "Asistencia Personalizado 1 aqui añadimos los servicios que queramos.",
-    url: "/paquetes",
-  },
-  {
-    titulo: "Servicio Personalizado 2",
-    descripcion:
-      "Asistencia Personalizado 2 aqui añadimos los servicios que queramos.",
-    url: "/paquetes",
-  },
- 
-];
+import { useTranslation } from "react-i18next";
 
 const Servicios = () => {
+  const { t } = useTranslation();
+  const servicios = t("servicios.lista", { returnObjects: true });
+
   return (
     <main className="w-full bg-white text-cafeOscuro">
-      <section className="w-full py-24 px-6 text-center max-w-5xl mx-auto">
-        <h1 className="text-4xl font-bold text-gray-900 mb-6">Soluciones de Asesoría Iberbrit</h1>
-        <p className="text-xl text-gray-700 mb-6">
-          En Iberbrit ofrecemos soluciones legales y fiscales a medida para empresas, autónomos y no residentes. Nuestros
-          <strong> economistas </strong> y asesores garantizan <strong> tranquilidad frente a la Agencia Tributaria </strong>
-          con una gestión precisa, cercana y experta.
-        </p>
-        <p className="text-gray-600 max-w-2xl mx-auto">
-          Especialistas en <strong>asesoría fiscal y contable</strong>, <strong>asesoría laboral</strong>, <strong>asesoría legal mercantil</strong> y
-          <strong> paquetes fiscales personalizados </strong> como el <strong>Kit Autónomo</strong> o el <strong>Kit No Residentes</strong>.
-        </p>
+
+      {/* HERO CON FONDO DINÁMICO */}
+      <section
+        className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat relative"
+        style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo1.avif')" }}
+      >
+        <div className="bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+            {t("servicios.titulo")}
+          </h1>
+          <p className="text-lg text-gray-700 text-center">
+            {t("servicios.descripcion1")}
+          </p>
+          <p className="text-lg text-gray-700 text-center mt-4">
+            {t("servicios.descripcion2")}
+          </p>
+        </div>
       </section>
 
-      <section className="w-full px-6 pb-24 max-w-6xl mx-auto">
+      {/* GRID DE SERVICIOS */}
+      <section className="w-full px-6 pb-24 pt-16 max-w-6xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {servicios.map((servicio, index) => (
             <Link
@@ -113,11 +46,9 @@ const Servicios = () => {
           ))}
         </div>
       </section>
+
     </main>
   );
 };
 
 export default Servicios;
-
-// ✅ Meta SEO sugerida para usar en index.html o con react-helmet
-// <meta name="description" content="Descubre las soluciones de asesoría fiscal, laboral, legal y contable de Iberbrit. Expertos economistas y paquetes personalizados para empresas, autónomos y no residentes." />

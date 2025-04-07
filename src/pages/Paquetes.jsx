@@ -1,88 +1,11 @@
-// src/pages/Paquetes.jsx
-
 import React, { useEffect, useRef, useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom"; // 👈 añadimos useNavigate
-
-const kits = [
-  {
-    nombre: "Kit Autónomo",
-    descripcion: "Para autónomos que buscan una solución completa para sus obligaciones fiscales y tributarias.",
-    beneficios: [
-      "Planificaciones tributarias",
-      "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
-      "Declaraciones informativas anuales",
-      "Presentaciones telemáticas",
-      "Solicitud de certificados tributarios",
-      "Atención de requerimientos",
-      "Aplazamientos y fraccionamientos de deudas",
-      "Libros-Registro Ley IVA",
-    ],
-  },
-  {
-    nombre: "Kit Fiscal Sociedades",
-    descripcion: "Para sociedades mercantiles y patrimoniales que requieren planificación fiscal y contabilidad integral.",
-    beneficios: [
-      "Planificaciones tributarias y pre-cierres",
-      "Declaraciones fiscales: IVA, Sociedades, Censos, IAE, Retenciones, Informativas Anuales, Pagos Fraccionados",
-      "Impuesto de Sociedades",
-      "Presentaciones telemáticas",
-      "Contabilidad desde nuestro despacho",
-      "Depósito de cuentas anuales",
-      "Legalización de libros oficiales",
-      "Consultas fiscales y contables",
-    ],
-  },
-  {
-    nombre: "Kit No Residentes",
-    descripcion: "Para no residentes con obligaciones fiscales en España: IRNR, IBI/SUMA, representación y más.",
-    beneficios: [
-      "Estudio fiscal personalizado en España",
-      "Pre-cálculo y presentación del IRNR",
-      "Gestión del IBI / SUMA",
-      "Representación fiscal ante la Agencia Tributaria",
-      "Presentaciones telemáticas",
-    ],
-  },
-  {
-    nombre: "Kit Residentes",
-    descripcion: "Para residentes con sociedades patrimoniales sin actividad fiscal.",
-    beneficios: [
-      "Declaraciones fiscales: Impuesto Sociedades (sin actividad)",
-      "Presentaciones telemáticas",
-      "Certificados tributarios",
-      "Legalización de libros oficiales",
-      "Presentaciones telemáticas",
-    ],
-  },
-  {
-    nombre: "Kit Sociedad Civil Fiscal",
-    descripcion: "Servicio fiscal completo para sociedades civiles: contabilidad, presentación de impuestos y más.",
-    beneficios: [
-      "Planificaciones tributarias",
-      "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
-      "Presentaciones telemáticas",
-      "Certificados tributarios",
-      "Atención de requerimientos",
-    ],
-  },
-  {
-    nombre: "Kit Laboral",
-    descripcion: "Asesoría laboral para empresas: contratación, Seguridad Social, nóminas, inspecciones y más.",
-    beneficios: [
-      "Consultas verbales",
-      "Altas y bajas en Seguridad Social",
-      "Asesoramiento sobre prestaciones",
-      "Confección de nóminas",
-      "Presentaciones telemáticas",
-      
-    ],
-  },
-];
-
+import { useLocation, useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Paquetes = () => {
+  const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate(); // 👈 Hook para navegar
+  const navigate = useNavigate();
   const query = new URLSearchParams(location.search);
   const kitDesdeResumen = query.get("kit");
 
@@ -95,26 +18,31 @@ const Paquetes = () => {
     }
   }, [kitDesdeResumen]);
 
-  const toggleExpand = (kit) => {
-    setExpanded((prev) => (prev === kit ? null : kit));
+  const toggleExpand = (kitNombre) => {
+    setExpanded((prev) => (prev === kitNombre ? null : kitNombre));
   };
 
-  const solicitarInformacion = (kit) => {
-    const nombreKit = encodeURIComponent(kit.nombre);
+  const solicitarInformacion = (kitNombre) => {
+    const nombreKit = encodeURIComponent(kitNombre);
     navigate(`/contacto?kit=${nombreKit}`);
   };
+
+  // Traemos los kits traducidos
+  const kits = t("paquetes.kits", { returnObjects: true });
 
   return (
     <section className="w-full min-h-screen bg-white py-24 px-4 text-cafeOscuro">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 text-center mb-12">
-          Todos nuestros paquetes de asesoramiento
+          {t("paquetes.titulo")}
         </h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {kits.map((kit, idx) => {
+          {Object.entries(kits).map(([key, kit], idx) => {
             const isOpen = expanded === kit.nombre;
-            const beneficiosAMostrar = isOpen ? kit.beneficios : kit.beneficios.slice(0, 4);
+            const beneficiosAMostrar = Array.isArray(kit.beneficios)
+              ? (isOpen ? kit.beneficios : kit.beneficios.slice(0, 4))
+              : [];
 
             return (
               <div
@@ -145,13 +73,13 @@ const Paquetes = () => {
                   {kit.beneficios.length > 4 && (
                     <button
                       onClick={() => toggleExpand(kit.nombre)}
-                      className="text-sm "
+                      className="text-sm"
                     >
                       {isOpen ? "Mostrar menos" : "Ver todos los beneficios"}
                     </button>
                   )}
                   <button
-                    onClick={() => solicitarInformacion(kit)}
+                    onClick={() => solicitarInformacion(kit.nombre)}
                     className={`w-full py-2 px-4 rounded-md font-semibold transition ${
                       isOpen
                         ? "bg-white text-rojoIber2 hover:bg-gray-100"

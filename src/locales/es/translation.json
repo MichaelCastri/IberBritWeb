@@ -149,6 +149,100 @@
       "descripcion": "En Iberbrit estamos en constante crecimiento. Si compartes nuestros valores y tienes pasión por el servicio jurídico, fiscal o económico queremos conocerte.",
       "boton": "Enviar solicitud"
     }
+  },
+  "paquetes": {
+    "titulo": "Todos nuestros paquetes de asesoramiento",
+    "kits": {
+      "kitAutonomo": {
+        "nombre": "Kit Autónomo",
+        "descripcion": "Para autónomos que buscan una solución completa para sus obligaciones fiscales y tributarias.",
+        "beneficios": [
+          "Planificaciones tributarias",
+          "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
+          "Declaraciones informativas anuales",
+          "Presentaciones telemáticas",
+          "Solicitud de certificados tributarios",
+          "Atención de requerimientos",
+          "Aplazamientos y fraccionamientos de deudas",
+          "Libros-Registro Ley IVA"
+        ]
+      },
+      "kitFiscalSociedades": {
+        "nombre": "Kit Fiscal Sociedades",
+        "descripcion": "Para sociedades mercantiles y patrimoniales que requieren planificación fiscal y contabilidad integral.",
+        "beneficios": [
+          "Planificaciones tributarias y pre-cierres",
+          "Declaraciones fiscales: IVA, Sociedades, Censos, IAE, Retenciones",
+          "Impuesto de Sociedades",
+          "Contabilidad desde nuestro despacho",
+          "Depósito de cuentas anuales",
+          "Legalización de libros oficiales",
+          "Consultas fiscales y contables"
+        ]
+      },
+      "kitNoResidentes": {
+        "nombre": "Kit No Residentes",
+        "descripcion": "Para no residentes con obligaciones fiscales en España: IRNR, IBI/SUMA, representación y más.",
+        "beneficios": [
+          "Estudio fiscal personalizado en España",
+          "Pre-cálculo y presentación del IRNR",
+          "Gestión del IBI / SUMA",
+          "Representación fiscal ante la Agencia Tributaria",
+          "Presentaciones telemáticas"
+        ]
+      },
+      "kitResidentes": {
+        "nombre": "Kit Residentes",
+        "descripcion": "Para residentes con sociedades patrimoniales sin actividad fiscal.",
+        "beneficios": [
+          "Declaraciones fiscales: Impuesto Sociedades (sin actividad)",
+          "Presentaciones telemáticas",
+          "Certificados tributarios",
+          "Legalización de libros oficiales"
+        ]
+      },
+      "kitSociedadCivil": {
+        "nombre": "Kit Sociedad Civil Fiscal",
+        "descripcion": "Servicio fiscal completo para sociedades civiles: contabilidad, presentación de impuestos y más.",
+        "beneficios": [
+          "Planificaciones tributarias",
+          "Declaraciones fiscales: IVA, Censos, IAE, Retenciones, IRPF",
+          "Presentaciones telemáticas",
+          "Certificados tributarios",
+          "Atención de requerimientos"
+        ]
+      },
+      "kitLaboral": {
+        "nombre": "Kit Laboral",
+        "descripcion": "Asesoría laboral para empresas: contratación, Seguridad Social, nóminas, inspecciones y más.",
+        "beneficios": [
+          "Consultas verbales",
+          "Altas y bajas en Seguridad Social",
+          "Asesoramiento sobre prestaciones",
+          "Confección de nóminas",
+          "Presentaciones telemáticas"
+        ]
+      }
+    }
+  },
+  "servicios": {
+    "titulo": "Soluciones de Asesoría Iberbrit",
+    "descripcion1": "En Iberbrit ofrecemos soluciones legales y fiscales a medida para empresas, autónomos y no residentes. Nuestros economistas y asesores garantizan tranquilidad frente a la Agencia Tributaria con una gestión precisa, cercana y experta.",
+    "descripcion2": "Especialistas en asesoría fiscal y contable, asesoría laboral, asesoría legal mercantil y paquetes fiscales personalizados como el Kit Autónomo o el Kit No Residentes.",
+    "lista": [
+      { "titulo": "Asesoría Fiscal y Contable", "descripcion": "Optimiza tu carga tributaria con nuestros economistas expertos. Nos encargamos de tus impuestos, balances, libros contables y más.", "url": "/servicios/fiscal" },
+      { "titulo": "Asesoría Laboral", "descripcion": "Gestionamos contratos, nóminas, despidos y relaciones laborales de forma eficaz, segura y legal.", "url": "/servicios/laboral" },
+      { "titulo": "Asesoría Legal Mercantil", "descripcion": "Soluciones jurídicas para sociedades, contratos, constitución de empresas y cumplimiento normativo.", "url": "/servicios/legal" },
+      { "titulo": "Asesoría Integral", "descripcion": "Servicio completo para empresas y autónomos: fiscal, contable, laboral y legal en un solo despacho.", "url": "/paquetes" },
+      { "titulo": "Kit Fiscal Autónomos", "descripcion": "Tributación simplificada, libros IVA, IRPF, atención de requerimientos y más.", "url": "/paquetes" },
+      { "titulo": "Kit Fiscal Sociedades", "descripcion": "Desde contabilidad interna hasta el Impuesto de Sociedades. Ideal para patrimoniales y PYMEs.", "url": "/paquetes" },
+      { "titulo": "Kit Legal", "descripcion": "Incluye defensa jurídica, revisión de contratos, constitución de sociedades y asistencia legal integral.", "url": "/paquetes" },
+      { "titulo": "Kit No Residentes", "descripcion": "Representación fiscal, IRNR, SUMA, IBI y atención personalizada para clientes internacionales.", "url": "/paquetes" },
+      { "titulo": "Kit Residentes", "descripcion": "Asistencia fiscal, legal y contable para residentes en España con obligaciones societarias.", "url": "/paquetes" },
+      { "titulo": "Kit Sociedad Civil Fiscal", "descripcion": "Asistencia civil para residentes en España con obligaciones fiscales.", "url": "/paquetes" },
+      { "titulo": "Servicio Personalizado 1", "descripcion": "Asistencia personalizada, adaptada a necesidades específicas de cada cliente.", "url": "/paquetes" },
+      { "titulo": "Servicio Personalizado 2", "descripcion": "Soluciones avanzadas en gestión fiscal, contable y legal.", "url": "/paquetes" }
+    ]
   }
   
 }

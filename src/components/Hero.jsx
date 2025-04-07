@@ -7,7 +7,7 @@ export default function Hero() {
   const { t } = useTranslation(); // 👈 Inicializar traducción
   const imagePaths = [
     "/images/fotoscartagenas/Apoyo4.avif",
-    "/images/Branding/2.webp",
+    "/images/fotoscartagenas/apoyo7.avif",
     "/images/fotoscartagenas/Apoyo1.avif",
     "/images/fotoscartagenas/Apoyo2.avif",
     "/images/fotoscartagenas/Apoyo3.avif",
@@ -27,7 +27,9 @@ export default function Hero() {
         className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{ backgroundImage: `url(${imagePaths[currentIndex]})` }}
       >
-        <div className="bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
+        
+        <div className="min-h-[600px] bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
+
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
             <div className="space-y-4">
               <h1 className="font-opensans text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-gray-900">
@@ -51,7 +53,7 @@ export default function Hero() {
             </div>
             <div className="flex justify-center">
               <img
-                src="/images/Branding/3.webp"
+                src="/images/Branding/3.avif"
                 alt="Iberbrit-Legal Servicios"
                 loading="lazy"  // <-- AQUÍ
                 width="400"

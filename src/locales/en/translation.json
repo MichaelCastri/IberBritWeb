@@ -149,6 +149,100 @@
       "descripcion": "At Iberbrit we are constantly growing. If you share our values and have a passion for legal, fiscal, or economic services, we want to meet you.",
       "boton": "Submit application"
     }
+  },
+  
+"paquetes": {
+    "titulo": "All our advisory packages",
+    "kits": {
+      "kitAutonomo": {
+        "nombre": "Freelancer Kit",
+        "descripcion": "For freelancers seeking a complete solution for their tax and fiscal obligations.",
+        "beneficios": [
+          "Tax planning",
+          "Tax returns: VAT, Census, IAE, Withholdings, IRPF",
+          "Annual informative statements",
+          "Online submissions",
+          "Request for tax certificates",
+          "Handling of tax inquiries",
+          "Debt deferrals and installments",
+          "VAT Ledger Books"
+        ]
+      },
+      "kitFiscalSociedades": {
+        "nombre": "Corporate Fiscal Kit",
+        "descripcion": "For corporations and holding companies requiring fiscal planning and accounting services.",
+        "beneficios": [
+          "Tax planning and pre-closing reports",
+          "Corporate tax returns: VAT, Census, IAE, Withholdings",
+          "Corporate Income Tax",
+          "Accounting services",
+          "Filing of annual accounts",
+          "Official books legalization",
+          "Fiscal and accounting consultations"
+        ]
+      },
+      "kitNoResidentes": {
+        "nombre": "Non-Resident Kit",
+        "descripcion": "For non-residents with tax obligations in Spain: IRNR, IBI/SUMA, and more.",
+        "beneficios": [
+          "Personalized tax assessment",
+          "Pre-calculation and filing of IRNR",
+          "Management of IBI / SUMA",
+          "Tax representation before Spanish Tax Agency",
+          "Online submissions"
+        ]
+      },
+      "kitResidentes": {
+        "nombre": "Resident Kit",
+        "descripcion": "For residents with inactive holding companies.",
+        "beneficios": [
+          "Corporate tax returns (inactive companies)",
+          "Online submissions",
+          "Request for tax certificates",
+          "Official books legalization"
+        ]
+      },
+      "kitSociedadCivil": {
+        "nombre": "Civil Partnership Fiscal Kit",
+        "descripcion": "Complete fiscal service for civil partnerships: accounting, tax filing, and more.",
+        "beneficios": [
+          "Tax planning",
+          "Tax returns: VAT, Census, IAE, Withholdings, IRPF",
+          "Online submissions",
+          "Request for tax certificates",
+          "Handling of tax inquiries"
+        ]
+      },
+      "kitLaboral": {
+        "nombre": "Labor Advisory Kit",
+        "descripcion": "Labor advisory for companies: hiring, Social Security, payrolls, inspections, and more.",
+        "beneficios": [
+          "Verbal consultations",
+          "Social Security registrations and cancellations",
+          "Advisory on social benefits",
+          "Payroll preparation",
+          "Online submissions"
+        ]
+      }
+    }
+  },
+  "servicios": {
+    "titulo": "Iberbrit Advisory Solutions",
+    "descripcion1": "At Iberbrit, we offer tailored legal and tax solutions for companies, freelancers, and non-residents. Our economists and advisors ensure peace of mind before the Tax Agency with precise, close, and expert management.",
+    "descripcion2": "Specialists in tax and accounting advisory, labor advisory, commercial legal advisory, and personalized tax packages such as the Freelancer Kit or the Non-Resident Kit.",
+    "lista": [
+      { "titulo": "Tax and Accounting Advisory", "descripcion": "Optimize your tax burden with our expert economists. We handle your taxes, financial statements, accounting books, and more.", "url": "/servicios/fiscal" },
+      { "titulo": "Labor Advisory", "descripcion": "We manage contracts, payroll, dismissals, and labor relations effectively, safely, and legally.", "url": "/servicios/laboral" },
+      { "titulo": "Commercial Legal Advisory", "descripcion": "Legal solutions for companies: contracts, company formation, and regulatory compliance.", "url": "/servicios/legal" },
+      { "titulo": "Comprehensive Advisory", "descripcion": "Complete service for companies and freelancers: tax, accounting, labor, and legal advice in one firm.", "url": "/paquetes" },
+      { "titulo": "Freelancer Tax Kit", "descripcion": "Simplified taxation, VAT books, IRPF, handling tax notices, and more.", "url": "/paquetes" },
+      { "titulo": "Corporate Tax Kit", "descripcion": "From internal accounting to corporate tax. Ideal for asset-holding companies and SMEs.", "url": "/paquetes" },
+      { "titulo": "Legal Kit", "descripcion": "Includes legal defense, contract review, company formation, and full legal assistance.", "url": "/paquetes" },
+      { "titulo": "Non-Resident Kit", "descripcion": "Tax representation, IRNR, SUMA, IBI, and personalized attention for international clients.", "url": "/paquetes" },
+      { "titulo": "Resident Kit", "descripcion": "Tax, legal, and accounting assistance for residents in Spain with corporate obligations.", "url": "/paquetes" },
+      { "titulo": "Civil Company Fiscal Kit", "descripcion": "Complete fiscal assistance for residents in Spain with civil company obligations.", "url": "/paquetes" },
+      { "titulo": "Custom Service 1", "descripcion": "Personalized assistance tailored to each client's specific needs.", "url": "/paquetes" },
+      { "titulo": "Custom Service 2", "descripcion": "Advanced solutions for tax, accounting, and legal management.", "url": "/paquetes" }
+    ]
   }
-
 }
