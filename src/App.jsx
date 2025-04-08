@@ -53,7 +53,7 @@ function App() {
   <img
     src="/whatsapp.svg" 
     alt="WhatsApp"
-    className="h-18 w-18"
+    className="h-12 w-12"
   />
 </a>
     
