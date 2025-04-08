@@ -18,7 +18,8 @@ import PoliticaCookies from "./pages/PoliticaCookies";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 
 // Nuevo componente Banner Cookies
-import CookiesBanner from "./components/CookiesBanner";
+
+import BannerCookies from "./components/BannerCookies";
 
 function App() {
   return (
@@ -42,7 +43,21 @@ function App() {
       </Routes>
 
       <Footer />
-      <CookiesBanner /> {/* Agregado aquí ✅ */}
+      {/* Botón de WhatsApp aquí, siempre visible */}
+      <a
+  href="https://wa.me/34653979464" 
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-6 right-6 bg-green-50 hover:bg-green-100 text-white p-4 rounded-full shadow-lg z-50"
+>
+  <img
+    src="/whatsapp.svg" 
+    alt="WhatsApp"
+    className="h-18 w-18"
+  />
+</a>
+    
+      <BannerCookies /> {/* Agregado aquí ✅ */}
     </Router>
   );
 }

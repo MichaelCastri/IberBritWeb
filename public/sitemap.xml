@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <url>
+    <loc>https://www.iberbrit.com/</loc>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/servicios</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/servicios/fiscal</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/servicios/laboral</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/servicios/legal</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/paquetes</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/nosotros</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/oficinas</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/contacto</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/legal</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/politicas-cookies</loc>
+  </url>
+
+  <url>
+    <loc>https://www.iberbrit.com/politicas-privacidad</loc>
+  </url>
+
+</urlset>
