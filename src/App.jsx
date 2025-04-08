@@ -1,5 +1,3 @@
-// src/App.jsx
-
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
@@ -19,12 +17,15 @@ import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 
+// Nuevo componente Banner Cookies
+import CookiesBanner from "./components/CookiesBanner";
+
 function App() {
   return (
     <Router>
-        <ScrollToTop />
-
+      <ScrollToTop />
       <Navbar />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicios/laboral" element={<Laboral />} />
@@ -34,14 +35,14 @@ function App() {
         <Route path="/contacto" element={<Contacto />} />
         <Route path="/nosotros" element={<Nosotros />} />
         <Route path="/servicios" element={<Servicios />} />
-        <Route path="/politicas-cookies" element={<PoliticaCookies/>} />
+        <Route path="/politicas-cookies" element={<PoliticaCookies />} />
         <Route path="/politicas-privacidad" element={<PoliticaPrivacidad />} />
         <Route path="/legal" element={<AvisoLegal />} />
         <Route path="/oficinas" element={<Oficinas />} />
-        
-        
       </Routes>
-      <Footer/>
+
+      <Footer />
+      <CookiesBanner /> {/* Agregado aquí ✅ */}
     </Router>
   );
 }

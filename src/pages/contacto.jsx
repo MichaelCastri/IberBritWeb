@@ -147,7 +147,7 @@ const Contacto = () => {
             <Mail className="w-4 h-4" /> info@iberbrit.com
           </div>
           <div className="flex items-center gap-2">
-            <Phone className="w-4 h-4" /> +34 900 000 000
+            <Phone className="w-4 h-4" /> +34 968 337 392
           </div>
           <div className="flex items-center gap-2">
             <MessageSquareText className="w-4 h-4" /> WhatsApp
