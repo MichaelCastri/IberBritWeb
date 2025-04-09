@@ -45,7 +45,7 @@ const Oficinas = () => {
           {/* Botón de cita */}
           <Link
             to={`/contacto?cita=${encodeURIComponent(oficina.ciudad)}`}
-            className="inline-block bg-red-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
+            className="inline-block  text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
           >
             {t("oficinas.boton", { ciudad: oficina.ciudad })}
           </Link>

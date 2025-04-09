@@ -33,7 +33,7 @@ const BannerCookies = () => {
   return (
     <div className="fixed inset-0 bg-black/70 flex justify-center items-center z-50 p-6">
       <div className="bg-white rounded-3xl p-8 w-full max-w-2xl shadow-xl text-center space-y-6">
-        <h2 className="text-2xl font-bold text-cafeOscuro">Gestiona tus Cookies</h2>
+        <h2 className="text-2xl font-bold text-red-800">Gestiona tus Cookies</h2>
         <p className="text-gray-700">
           Utilizamos cookies para analizar el tráfico y personalizar anuncios. Puedes aceptar todas las cookies o configurar tus preferencias.
         </p>
