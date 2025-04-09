@@ -43,7 +43,7 @@ const PorqueElegirnos = () => {
           </p>
           <button
             onClick={() => navigate("/contacto")}
-            className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-rojoIber1 transition"
+            className="bg-black text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
           >
             {t("porqueElegirnos.solicitar")}
           </button>

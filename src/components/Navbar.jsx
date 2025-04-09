@@ -67,7 +67,7 @@ export default function Navbar() {
           <select
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}
-            className="border border-gray-300 rounded-md text-gray-900 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
+            className="border border-gray-300 rounded-md text-gray-900 px-2 py-1 focus:outline-none focus:ring-2 focus:ring-red-800"
           >
             <option value="es">ES</option>
             <option value="en">EN</option>

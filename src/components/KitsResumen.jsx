@@ -43,7 +43,7 @@ const KitsResumen = () => {
             <div
               key={idx}
               className={`relative bg-white rounded-2xl shadow-md p-8 flex flex-col justify-between transition hover:-translate-y-1 ${
-                kit.nombre === t("kits.autonomo.nombre") ? "border-2 border-rojoIber2" : ""
+                kit.nombre === t("kits.autonomo.nombre") ? "border-2 border-red-800" : ""
               }`}
             >
               {/* Badge para el más popular */}
@@ -62,7 +62,7 @@ const KitsResumen = () => {
                   {kit.beneficios.slice(0, 4).map((item, i) => (
                     <li
                       key={i}
-                      className="before:content-['✓'] before:mr-2 before:text-rojoIber2"
+                      className="before:content-['✓'] before:mr-2 before:text-red-800"
                     >
                       {item}
                     </li>

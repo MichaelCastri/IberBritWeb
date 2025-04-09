@@ -65,7 +65,7 @@ const PoliticaPrivacidad = () => {
 
         <h2 className="text-2xl font-semibold mb-4">8. Uso de cookies y Google Analytics</h2>
         <p className="mb-6">
-          Este sitio utiliza Google Analytics (Google Ireland Limited / Google LLC) con la extensión <code>_anonymizeIp()</code> para garantizar el anonimato de los usuarios. El uso de cookies puede ser gestionado o rechazado según se indica en nuestra <a href="/politicas-cookies" className="text-rojoIber2 underline">Política de Cookies</a>.
+          Este sitio utiliza Google Analytics (Google Ireland Limited / Google LLC) con la extensión <code>_anonymizeIp()</code> para garantizar el anonimato de los usuarios. El uso de cookies puede ser gestionado o rechazado según se indica en nuestra <a href="/politicas-cookies" className="text-red-800 underline">Política de Cookies</a>.
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">9. Actualización de la política</h2>

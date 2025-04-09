@@ -50,7 +50,7 @@ const Paquetes = () => {
                 ref={(el) => (refs.current[kit.nombre] = el)}
                 className={`relative flex flex-col justify-between p-8 rounded-3xl border transition-all duration-300 cursor-pointer overflow-hidden ${
                   isOpen
-                    ? "bg-gray-100 text-gray-900 border-rojoIber2 shadow-xl scale-[1.02]"
+                    ? "bg-gray-100 text-gray-900 border-red-800 shadow-xl scale-[1.02]"
                     : "bg-white text-gray-900 border-gray-200 hover:shadow-md"
                 }`}
               >
@@ -59,7 +59,7 @@ const Paquetes = () => {
                   <p className="text-base">{kit.descripcion}</p>
                   <ul className="space-y-2 min-h-[120px] text-sm">
                     {beneficiosAMostrar.map((item, i) => (
-                      <li key={i} className="before:content-['✓'] before:mr-2 before:text-rojoIber2">
+                      <li key={i} className="before:content-['✓'] before:mr-2 before:text-red-800">
                         {item}
                       </li>
                     ))}

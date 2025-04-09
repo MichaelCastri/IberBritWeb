@@ -84,7 +84,7 @@ const Contacto = () => {
               value={formData.nombre}
               onChange={handleChange}
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800"
             />
           </div>
 
@@ -98,7 +98,7 @@ const Contacto = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800"
             />
           </div>
 
@@ -111,7 +111,7 @@ const Contacto = () => {
               name="telefono"
               value={formData.telefono}
               onChange={handleChange}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
+              className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-800"
             />
           </div>
 
@@ -125,7 +125,7 @@ const Contacto = () => {
               onChange={handleChange}
               rows="4"
               required
-              className="w-full rounded-lg border border-gray-300 px-4 text-black py-2 focus:outline-none focus:ring-2 focus:ring-rojoIber2"
+              className="w-full rounded-lg border border-gray-300 px-4 text-black py-2 focus:outline-none focus:ring-2 focus:ring-red-800"
               placeholder="Escribe tu mensaje..."
             ></textarea>
           </div>
@@ -135,7 +135,7 @@ const Contacto = () => {
 
           <button
             type="submit"
-            className="w-full bg-rojoIber2 text-white font-semibold py-3 px-6 rounded-lg hover:bg-rojoIber1 transition"
+            className="w-full bg-red-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-800 transition"
           >
             Enviar consulta
           </button>

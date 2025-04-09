@@ -47,7 +47,7 @@ const BannerCookies = () => {
           </button>
           <a
             href="/politicas-cookies"
-            className=" text-sm text-rojoIber2 underline  mt-2 sm:mt-0"
+            className=" text-sm text-red-800 underline  mt-2 sm:mt-0"
           >
             Política de Cookies
           </a>

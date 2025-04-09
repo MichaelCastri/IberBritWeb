@@ -33,7 +33,7 @@ const Legal = () => {
         <ul className="grid gap-6 md:grid-cols-2 list-none">
           {t("legal.incluye.lista", { returnObjects: true }).map((item, idx) => (
             <li key={idx} className="flex items-start gap-4 text-gray-700">
-              <ShieldCheck className="text-rojoIber2 mt-1 w-5 h-5" />
+              <ShieldCheck className="text-red-800 mt-1 w-5 h-5" />
               <span>{item}</span>
             </li>
           ))}
@@ -106,7 +106,7 @@ const Legal = () => {
         </h2>
         <Link
           to="/contacto"
-          className="inline-block bg-rojoIber2 text-white px-8 py-4 rounded-lg font-semibold hover:bg-rojoIber1 transition"
+          className="inline-block bg-red-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-800 transition"
         >
           {t("legal.cta.boton")}
         </Link>

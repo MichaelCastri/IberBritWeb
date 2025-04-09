@@ -71,7 +71,7 @@ const Nosotros = () => {
       <Equipo />
 
       {/* Sección: ¿Quieres trabajar con nosotros? */}
-      <section className="w-full bg-rojoIber2 text-black py-20 px-6 text-center">
+      <section className="w-full bg-red-800 text-black py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             {t('nosotros.trabajaConNosotros.titulo')}
@@ -81,7 +81,7 @@ const Nosotros = () => {
           </p>
           <a
             href="/contacto"
-            className="inline-block bg-white text-rojoIber2 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
+            className="inline-block bg-white text-red-800 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition"
           >
             {t('nosotros.trabajaConNosotros.boton')}
           </a>

@@ -28,7 +28,7 @@ const AnimatedNumber = ({ value, start }) => {
     return () => clearInterval(interval);
   }, [value, start]);
 
-  return <span className="text-rojoIber2">{count.toLocaleString()}</span>;
+  return <span className="text-red-800">{count.toLocaleString()}</span>;
 };
 
 const Estadisticas = () => {
@@ -116,7 +116,7 @@ const Estadisticas = () => {
           </p>
           <button
             onClick={() => navigate("/contacto")}
-            className="bg-rojoIber2 text-white px-6 py-3 rounded-lg font-semibold hover:bg-rojoIber1 transition"
+            className="bg-red-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
           >
             {t("estadisticas.boton")}
           </button>
