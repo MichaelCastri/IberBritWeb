@@ -27,7 +27,7 @@ export default function Hero() {
         className="w-full py-12 md:py-24 lg:py-32 bg-cover bg-center bg-no-repeat transition-all duration-1000"
         style={{ backgroundImage: `url(${imagePaths[currentIndex]})` }}
       >
-        
+
         <div className="min-h-[600px] bg-white/80 backdrop-blur-sm p-6 md:p-12 rounded-xl max-w-6xl mx-auto">
 
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 items-center">
@@ -40,12 +40,12 @@ export default function Hero() {
               </p>
               <div className="flex flex-col text-white gap-2 min-[400px]:flex-row">
                 <Link to="/contacto">
-                  <Button size="lg" className="w-full min-[400px]:w-auto">
+                  <Button variant="outline" size="lg" className="w-full min-[400px]:w-auto border-red-800 bg-red-800 hover:bg-red-700 text-white">
                     {t('home.hero.botonInformacion')}
                   </Button>
                 </Link>
                 <Link to="/servicios">
-                  <Button variant="outline" size="lg" className="text-white w-full min-[400px]:w-auto">
+                  <Button variant="outline" size="lg" className="w-full min-[400px]:w-auto border-red-800 bg-red-800 hover:bg-red-700 text-white">
                     {t('home.hero.botonServicios')}
                   </Button>
                 </Link>

@@ -78,7 +78,7 @@ const KitsResumen = () => {
               <div>
                 <button
                   onClick={() => solicitarInformacion(kit)}
-                  className="w-full bg-rojoIber2 text-white font-medium py-2 px-4 rounded-md hover:bg-rojoIber1 transition"
+                  className="w-full  border-red-800 bg-red-800 hover:bg-red-700 text-white font-medium py-2 px-4 rounded-md transition"
                 >
                   {t("kits.solicitarInformacion")}
                 </button>
@@ -88,12 +88,14 @@ const KitsResumen = () => {
         </div>
 
         {/* CTA */}
-        <Link
-          to="/paquetes"
-          className="inline-block bg-cafeOscuro text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-900 transition"
-        >
-          {t("kits.verTodos")}
-        </Link>
+        <button
+      onClick={() => navigate("/paquetes")}
+      className="w-full border-red-800 bg-red-800 text-white hover:bg-red-700 hover:text-white font-medium py-2 px-4 rounded-md transition"
+    >
+      {t("kits.verTodos")}
+    </button>
+
+
       </div>
     </section>
   );

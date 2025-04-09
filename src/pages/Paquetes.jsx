@@ -50,7 +50,7 @@ const Paquetes = () => {
                 ref={(el) => (refs.current[kit.nombre] = el)}
                 className={`relative flex flex-col justify-between p-8 rounded-3xl border transition-all duration-300 cursor-pointer overflow-hidden ${
                   isOpen
-                    ? "bg-rojoIber2 text-gray-900 border-rojoIber2 shadow-xl scale-[1.02]"
+                    ? "bg-gray-100 text-gray-900 border-rojoIber2 shadow-xl scale-[1.02]"
                     : "bg-white text-gray-900 border-gray-200 hover:shadow-md"
                 }`}
               >
@@ -73,7 +73,7 @@ const Paquetes = () => {
                   {kit.beneficios.length > 4 && (
                     <button
                       onClick={() => toggleExpand(kit.nombre)}
-                      className="text-sm"
+                      className="border-red-800 bg-red-800 hover:bg-red-700 text-white text-sm"
                     >
                       {isOpen ? "Mostrar menos" : "Ver todos los beneficios"}
                     </button>
@@ -82,8 +82,8 @@ const Paquetes = () => {
                     onClick={() => solicitarInformacion(kit.nombre)}
                     className={`w-full py-2 px-4 rounded-md font-semibold transition ${
                       isOpen
-                        ? "bg-white text-rojoIber2 hover:bg-gray-100"
-                        : "bg-rojoIber2 text-white hover:bg-rojoIber1"
+                        ? "border-red-800 bg-red-800 hover:bg-red-700 text-white"
+                        : "border-red-800 bg-red-800 hover:bg-red-700 text-white"
                     }`}
                   >
                     Solicitar información
