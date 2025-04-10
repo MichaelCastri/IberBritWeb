@@ -28,7 +28,7 @@ const AnimatedNumber = ({ value, start }) => {
     return () => clearInterval(interval);
   }, [value, start]);
 
-  return <span className="text-red-800">{count.toLocaleString()}</span>;
+  return <span className="text-black">{count.toLocaleString()}</span>;
 };
 
 const Estadisticas = () => {
@@ -92,7 +92,7 @@ const Estadisticas = () => {
           {t("estadisticas.descripcion")}
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
+        <div className="grid  grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           {datos.map((item, idx) => (
             <div
               key={idx}
