@@ -59,11 +59,12 @@ export default function Navbar() {
 
         {/* Botón "Llámanos" + Selector de idioma */}
         <div className="flex items-center gap-4">
-        <Button asChild variant="outline" size="sm" className="hidden md:flex">
-  <a href="tel:+34 968 337 392">
-    <Phone className="mr-2 h-4 w-4" /> Llámanos
-  </a>
-</Button>
+        
+            <a href="tel:+34 968 337 392">
+              <Phone className="mr-2 h-4 w-4" /> Llámanos
+            </a>
+          
+
           <select
             onChange={(e) => changeLanguage(e.target.value)}
             defaultValue={i18n.language}

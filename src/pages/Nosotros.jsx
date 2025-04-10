@@ -71,7 +71,7 @@ const Nosotros = () => {
       <Equipo />
 
       {/* Sección: ¿Quieres trabajar con nosotros? */}
-      <section className="w-full bg-red-800 text-black py-20 px-6 text-center">
+      <section className="w-full bg-white text-black py-20 px-6 text-center">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl font-bold mb-4">
             {t('nosotros.trabajaConNosotros.titulo')}

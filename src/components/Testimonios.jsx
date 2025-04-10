@@ -52,7 +52,7 @@ const Testimonios = () => {
             href="https://www.google.com/search?q=Iberbrit+Asesores"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-red-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
+            className="inline-block  text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-800 transition"
           >
             Ver más reseñas en Google
           </a>
