@@ -39,12 +39,15 @@ const BannerCookies = () => {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mt-6">
-          <button onClick={rejectAll} className="border-red-800 bg-red-800 hover:bg-red-700 text-white rounded-lg px-6 py-2 transition">
-            Solo esenciales
-          </button>
-          <button onClick={acceptAll} className="border-red-800 bg-red-800 hover:bg-red-700 text-white rounded-lg px-6 py-2 transition">
-            Aceptar todas
-          </button>
+          <div className="bg-white dark:bg-white text-black dark:text-black">
+            <button
+              onClick={rejectAll}
+              className="bg-[#991b1b] border-[#991b1b] hover:bg-[#7f1d1d] text-white rounded-lg px-6 py-2 transition"
+            >
+              Solo esenciales
+            </button>
+          </div>
+
           <a
             href="/politicas-cookies"
             className=" text-sm text-red-800 underline  mt-2 sm:mt-0"
