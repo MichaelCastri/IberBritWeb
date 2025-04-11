@@ -6,7 +6,7 @@ const Contacto = () => {
   const location = useLocation();
   const query = new URLSearchParams(location.search);
   const kitSeleccionado = query.get("kit");
-  const citaSolicitada = query.get("cita"); // 👈 Añadimos esto
+  const citaSolicitada = query.get("cita");
 
   const [formData, setFormData] = useState({
     nombre: "",
@@ -30,13 +30,13 @@ const Contacto = () => {
         mensaje: `Quisiera que me agendaran una cita en ${citaSolicitada}`,
       }));
     }
-  }, [kitSeleccionado, citaSolicitada]); // 👈 Observa ambos
+  }, [kitSeleccionado, citaSolicitada]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
     setSuccess("");
@@ -52,9 +52,25 @@ const Contacto = () => {
       return;
     }
 
-    console.log("Formulario enviado:", formData);
-    setSuccess("¡Tu consulta ha sido enviada correctamente!");
-    setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+    try {
+      const response = await fetch("https://iberbrit.com/enviar-formulario", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSuccess("¡Tu consulta ha sido enviada correctamente!");
+        setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+      } else {
+        throw new Error("Error al enviar el formulario");
+      }
+    } catch (error) {
+      console.error("Error al enviar el formulario:", error);
+      setError("Hubo un problema al enviar tu consulta. Por favor, inténtalo más tarde.");
+    }
   };
 
   return (
@@ -73,7 +89,6 @@ const Contacto = () => {
         </p>
 
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
-          {/* Formulario igual que lo tenías */}
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-1">
               Nombre completo *
@@ -141,7 +156,6 @@ const Contacto = () => {
           </button>
         </form>
 
-        {/* Datos de contacto abajo */}
         <div className="mt-10 flex justify-center gap-6 text-sm text-gray-700">
           <div className="flex items-center gap-2">
             <Mail className="w-4 h-4" /> info@iberbrit.com
