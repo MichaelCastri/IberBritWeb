@@ -42,26 +42,26 @@ const Contacto = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
-
+  
     if (!formData.nombre || !formData.email || !formData.mensaje) {
       setError("Por favor, completa todos los campos obligatorios.");
       return;
     }
-
+  
     if (!recaptchaValue) {
       setError("Por favor, verifica que no eres un robot.");
       return;
     }
-
+  
     try {
       const response = await fetch("https://iberbrit.com/enviar-formulario", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({ ...formData, token: recaptchaValue }), // ✅ ENVÍA EL TOKEN
       });
-
+  
       if (response.ok) {
         setSuccess("¡Tu consulta ha sido enviada correctamente!");
         setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
