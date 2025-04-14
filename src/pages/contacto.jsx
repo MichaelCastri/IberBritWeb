@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone, MessageSquareText } from "lucide-react";
+import ReCAPTCHA from "react-google-recaptcha"; // 👈 IMPORTANTE
 
 const Contacto = () => {
   const location = useLocation();
@@ -15,6 +16,7 @@ const Contacto = () => {
     mensaje: "",
   });
 
+  const [recaptchaValue, setRecaptchaValue] = useState(""); // 👈 NUEVO
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -46,9 +48,8 @@ const Contacto = () => {
       return;
     }
 
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
-      setError("Introduce un correo electrónico válido.");
+    if (!recaptchaValue) {
+      setError("Por favor, verifica que no eres un robot.");
       return;
     }
 
@@ -144,6 +145,14 @@ const Contacto = () => {
               className="w-full rounded-lg border border-gray-300 px-4 text-black py-2 focus:outline-none focus:ring-2 focus:ring-red-800"
               placeholder="Escribe tu mensaje..."
             ></textarea>
+          </div>
+
+          {/* ✅ Aquí va el reCAPTCHA */}
+          <div className="flex justify-center">
+            <ReCAPTCHA
+              sitekey="6LeIwxcrAAAAALxmpd5ERL47Xx1OD2RCbAQeS0jk" // 👈 Tu Site Key
+              onChange={(value) => setRecaptchaValue(value)}
+            />
           </div>
 
           {error && <p className="text-red-600 text-sm">{error}</p>}
