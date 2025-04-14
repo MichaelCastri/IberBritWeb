@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone, MessageSquareText } from "lucide-react";
-import ReCAPTCHA from "react-google-recaptcha"; // 👈 IMPORTANTE
+import ReCAPTCHA from "react-google-recaptcha"; // 👈 Importante
 
 const Contacto = () => {
   const location = useLocation();
@@ -16,7 +16,7 @@ const Contacto = () => {
     mensaje: "",
   });
 
-  const [recaptchaValue, setRecaptchaValue] = useState(""); // 👈 NUEVO
+  const [recaptchaValue, setRecaptchaValue] = useState(""); // 👈 Nuevo
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -42,29 +42,33 @@ const Contacto = () => {
     e.preventDefault();
     setError("");
     setSuccess("");
-  
+
     if (!formData.nombre || !formData.email || !formData.mensaje) {
       setError("Por favor, completa todos los campos obligatorios.");
       return;
     }
-  
+
     if (!recaptchaValue) {
       setError("Por favor, verifica que no eres un robot.");
       return;
     }
-  
+
     try {
       const response = await fetch("https://iberbrit.com/enviar-formulario", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ ...formData, token: recaptchaValue }), // ✅ ENVÍA EL TOKEN
+        body: JSON.stringify({
+          ...formData,
+          recaptchaToken: recaptchaValue, // 👈 También enviamos el token de reCAPTCHA
+        }),
       });
-  
+
       if (response.ok) {
         setSuccess("¡Tu consulta ha sido enviada correctamente!");
         setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
+        setRecaptchaValue(""); // 👈 Opcional: limpiar el reCAPTCHA
       } else {
         throw new Error("Error al enviar el formulario");
       }
@@ -75,10 +79,9 @@ const Contacto = () => {
   };
 
   return (
-    <section
-      className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
-      style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo3.avif')" }}
-    >
+    <section className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
+      style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo3.avif')" }}>
+      
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-10">
@@ -147,10 +150,10 @@ const Contacto = () => {
             ></textarea>
           </div>
 
-          {/* ✅ Aquí va el reCAPTCHA */}
+          {/* ✅ Aquí el reCAPTCHA con la nueva SiteKey */}
           <div className="flex justify-center">
             <ReCAPTCHA
-              sitekey="6LeIwxcrAAAAALxmpd5ERL47Xx1OD2RCbAQeS0jk" // 👈 Tu Site Key
+              sitekey="6Le83hcrAAAAAKUNG9nzI1cBzvbGDBL-Rzlvz_i9"
               onChange={(value) => setRecaptchaValue(value)}
             />
           </div>
