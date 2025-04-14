@@ -14,6 +14,7 @@ const Contacto = () => {
     email: "",
     telefono: "",
     mensaje: "",
+
   });
 
   const [recaptchaValue, setRecaptchaValue] = useState(""); // 👈 Nuevo
@@ -61,7 +62,7 @@ const Contacto = () => {
         },
         body: JSON.stringify({
           ...formData,
-          recaptchaToken: recaptchaValue, // 👈 También enviamos el token de reCAPTCHA
+          recaptchaValue: recaptchaValue, // 👈 También enviamos el token de reCAPTCHA
         }),
       });
 
