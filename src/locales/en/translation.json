@@ -1,4 +1,52 @@
-{
+
+  {
+    "seo": {
+      "home": {
+        "title": "Iberbrit Asesores | Expertos en Asesoría Fiscal, Laboral y Legal",
+        "description": "Iberbrit ofrece asesoría fiscal, laboral y legal de la mano de economistas y abogados especializados. Garantizamos tranquilidad ante la Agencia Tributaria.",
+        "keywords": "asesoría fiscal, laboral, legal, economistas, abogados, asesoría integral"
+      },
+      "servicios": {
+        "title": "Servicios de Asesoría Integral | Iberbrit",
+        "description": "Descubre nuestros servicios de asesoría fiscal-contable, laboral y legal adaptados para autónomos, empresas y no residentes.",
+        "keywords": "asesoría fiscal, asesoría laboral, asesoría legal, asesoría integral, contabilidad empresarial"
+      },
+      "paquetes": {
+        "title": "Paquetes de Asesoramiento Fiscal y Legal | Iberbrit",
+        "description": "Explora nuestros kits de asesoramiento fiscal y legal para autónomos, sociedades, residentes y no residentes.",
+        "keywords": "kit fiscal autónomos, kit fiscal sociedades, kit legal, kit no residentes, asesoría fiscal"
+      },
+      "contacto": {
+        "title": "Contáctanos | Iberbrit Asesores",
+        "description": "Contacta con Iberbrit y recibe asesoría personalizada en menos de 24 horas. Te ayudamos con tu situación fiscal, laboral y legal.",
+        "keywords": "contacto Iberbrit, asesoría fiscal, asesoría laboral, consulta legal, economistas y abogados"
+      },
+      "nosotros": {
+        "title": "Sobre Iberbrit | Asesoría Fiscal, Laboral y Legal",
+        "description": "Conoce Iberbrit, nuestro equipo y los valores que nos convierten en la asesoría líder en fiscalidad, contabilidad y derecho mercantil.",
+        "keywords": "sobre Iberbrit, asesoría legal, asesoría fiscal, economistas, abogados, asesoría integral"
+      },
+      "oficinas": {
+        "title": "Nuestras Oficinas en España | Iberbrit",
+        "description": "Visítanos en Madrid, Cartagena o La Manga y recibe asesoría fiscal, laboral y legal especializada.",
+        "keywords": "oficinas Iberbrit, Madrid, Cartagena, La Manga, asesoría fiscal, asesoría legal"
+      },
+      "fiscal": {
+        "title": "Asesoría Fiscal y Contable | Iberbrit",
+        "description": "Optimiza tu fiscalidad con Iberbrit. Asesoría fiscal estratégica y contabilidad precisa para autónomos y empresas.",
+        "keywords": "asesoría fiscal, asesoría contable, impuestos, economistas, planificación tributaria"
+      },
+      "laboral": {
+        "title": "Asesoría Laboral Integral | Iberbrit",
+        "description": "Protege tu empresa con asesoría laboral integral en contratación, nóminas y seguridad social con Iberbrit.",
+        "keywords": "asesoría laboral, contratos laborales, gestión laboral, inspecciones trabajo"
+      },
+      "legal": {
+        "title": "Asesoría Legal Mercantil | Iberbrit",
+        "description": "Asesoría jurídica mercantil integral para empresas en constitución, contratos, compliance y procedimientos legales.",
+        "keywords": "asesoría legal mercantil, constitución sociedades, contratos mercantiles, abogados mercantiles"
+      }
+    },
   "home": {
     "hero": {
       "titulo": "Legal, Tax, Accounting, and Labor Consulting for Companies and Individuals",

@@ -1,6 +1,9 @@
+// src/pages/Servicios.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Servicios = () => {
   const { t } = useTranslation();
@@ -8,6 +11,12 @@ const Servicios = () => {
 
   return (
     <main className="w-full bg-white text-cafeOscuro">
+
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.servicios.title')}</title>
+        <meta name="description" content={t('seo.servicios.description')} />
+        <meta name="keywords" content={t('seo.servicios.keywords')} />
+      </Helmet>
 
       {/* HERO CON FONDO DINÁMICO */}
       <section

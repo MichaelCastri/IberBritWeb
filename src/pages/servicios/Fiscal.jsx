@@ -1,7 +1,10 @@
+// src/pages/Fiscal.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { FileText } from "lucide-react";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Fiscal = () => {
   const { t } = useTranslation(); // 🏳️‍🌈 Traducción activa
@@ -12,6 +15,12 @@ const Fiscal = () => {
 
   return (
     <main className="w-full bg-white text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.fiscal.title')}</title>
+        <meta name="description" content={t('seo.fiscal.description')} />
+        <meta name="keywords" content={t('seo.fiscal.keywords')} />
+      </Helmet>
+
       {/* HERO */}
       <section
         className="w-full py-24 bg-cover bg-center bg-no-repeat relative"
@@ -116,7 +125,6 @@ const Fiscal = () => {
           {t("fiscal.ctaBoton")}
         </Link>
       </section>
-
     </main>
   );
 };

@@ -1,13 +1,21 @@
+// src/pages/Legal.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { ShieldCheck } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Legal = () => {
   const { t } = useTranslation();
 
   return (
     <main className="w-full bg-white text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.legal.title')}</title>
+        <meta name="description" content={t('seo.legal.description')} />
+        <meta name="keywords" content={t('seo.legal.keywords')} />
+      </Helmet>
 
       {/* HERO */}
       <section

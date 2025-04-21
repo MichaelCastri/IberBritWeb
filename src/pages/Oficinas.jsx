@@ -1,6 +1,9 @@
+// src/pages/Oficinas.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Oficinas = () => {
   const { t } = useTranslation();
@@ -8,6 +11,12 @@ const Oficinas = () => {
 
   return (
     <main className="w-full bg-white min-h-screen py-24 px-6 text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.oficinas.title')}</title>
+        <meta name="description" content={t('seo.oficinas.description')} />
+        <meta name="keywords" content={t('seo.oficinas.keywords')} />
+      </Helmet>
+
       <section className="max-w-6xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-900 mb-6">
           {t("oficinas.titulo")}

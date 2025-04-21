@@ -1,9 +1,14 @@
+// src/pages/Contacto.jsx
+
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Mail, Phone, MessageSquareText } from "lucide-react";
 import ReCAPTCHA from "react-google-recaptcha"; // 👈 Importante
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
+import { useTranslation } from 'react-i18next'; // 👈 Traducciones
 
 const Contacto = () => {
+  const { t } = useTranslation(); // 👈 Inicializa traducción
   const location = useLocation();
   const query = new URLSearchParams(location.search);
   const kitSeleccionado = query.get("kit");
@@ -14,10 +19,9 @@ const Contacto = () => {
     email: "",
     telefono: "",
     mensaje: "",
-
   });
 
-  const [recaptchaValue, setRecaptchaValue] = useState(""); // 👈 Nuevo
+  const [recaptchaValue, setRecaptchaValue] = useState("");
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -62,14 +66,14 @@ const Contacto = () => {
         },
         body: JSON.stringify({
           ...formData,
-          recaptchaValue: recaptchaValue, // 👈 También enviamos el token de reCAPTCHA
+          recaptchaValue: recaptchaValue,
         }),
       });
 
       if (response.ok) {
         setSuccess("¡Tu consulta ha sido enviada correctamente!");
         setFormData({ nombre: "", email: "", telefono: "", mensaje: "" });
-        setRecaptchaValue(""); // 👈 Opcional: limpiar el reCAPTCHA
+        setRecaptchaValue("");
       } else {
         throw new Error("Error al enviar el formulario");
       }
@@ -82,15 +86,21 @@ const Contacto = () => {
   return (
     <section className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
       style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo3.avif')" }}>
-      
+
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.contacto.title')}</title>
+        <meta name="description" content={t('seo.contacto.description')} />
+        <meta name="keywords" content={t('seo.contacto.keywords')} />
+      </Helmet>
+
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 
       <div className="relative z-10 max-w-4xl mx-auto bg-white/90 backdrop-blur-md rounded-2xl shadow-xl p-10">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 mb-2">
-          ¿Empezamos hoy mismo a resolver tu situación?
+          {t('contacto.titulo')}
         </h2>
         <p className="text-center text-gray-700 mb-10">
-          Contáctanos y te responderemos en menos de 24 horas.
+          {t('contacto.descripcion')}
         </p>
 
         <form onSubmit={handleSubmit} className="grid grid-cols-1 gap-6">
@@ -166,7 +176,7 @@ const Contacto = () => {
             type="submit"
             className="w-full bg-red-800 text-white font-semibold py-3 px-6 rounded-lg hover:bg-red-800 transition"
           >
-            Enviar consulta
+            {t('contacto.botonEnviar')}
           </button>
         </form>
 

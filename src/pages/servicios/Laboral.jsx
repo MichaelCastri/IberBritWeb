@@ -1,13 +1,21 @@
+// src/pages/Laboral.jsx
+
 import React from "react";
 import { Link } from "react-router-dom";
 import { Briefcase } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Laboral = () => {
   const { t } = useTranslation();
 
   return (
     <main className="w-full bg-white text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.laboral.title')}</title>
+        <meta name="description" content={t('seo.laboral.description')} />
+        <meta name="keywords" content={t('seo.laboral.keywords')} />
+      </Helmet>
 
       {/* HERO */}
       <section
@@ -106,7 +114,7 @@ const Laboral = () => {
         </h2>
         <Link
           to="/contacto"
-         className="inline-block  text-red-800 px-8 py-4 rounded-lg font-semibold hover:bg-red-200 transition"
+          className="inline-block  text-red-800 px-8 py-4 rounded-lg font-semibold hover:bg-red-200 transition"
         >
           {t("laboral.cta.boton")}
         </Link>

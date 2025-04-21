@@ -9,12 +9,15 @@ const marcas = [
   "/images/marcas/MadFlats.webp",
   "/images/marcas/SiMadrid.webp",
   "/images/marcas/Spanish Conection.webp",
+  "/images/marcas/image.avif",
   "/images/marcas/Auren.webp",
   "/images/marcas/Economistas.webp",
   "/images/marcas/El Enemigo.webp",
   "/images/marcas/MadFlats.webp",
   "/images/marcas/SiMadrid.webp",
   "/images/marcas/Spanish Conection.webp",
+  "/images/marcas/image.avif",
+   
 ];
 
 const MarcasColaboradoras = () => {
@@ -31,7 +34,7 @@ return (
                             key={index}
                             src={src}
                             alt={`Marca ${index + 1}`}
-                            className="h-16 sm:h-20 object-contain"
+                            className="h-16 sm:h-20 w-52 object-contain"
                         />
                     ))}
                 </div>

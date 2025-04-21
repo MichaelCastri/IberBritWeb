@@ -1,6 +1,9 @@
+// src/pages/Paquetes.jsx
+
 import React, { useEffect, useRef, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Paquetes = () => {
   const { t } = useTranslation();
@@ -32,6 +35,12 @@ const Paquetes = () => {
 
   return (
     <section className="w-full min-h-screen bg-white py-24 px-4 text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.paquetes.title')}</title>
+        <meta name="description" content={t('seo.paquetes.description')} />
+        <meta name="keywords" content={t('seo.paquetes.keywords')} />
+      </Helmet>
+
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 text-center mb-12">
           {t("paquetes.titulo")}

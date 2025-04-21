@@ -1,9 +1,13 @@
+// src/pages/Nosotros.jsx
+
 import React, { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
+import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 import Equipo from "../components/Equipo";
 
 const Nosotros = () => {
-  const { t } = useTranslation(); // 👈 Añadido
+  const { t } = useTranslation(); // 👈 Traducciones
+
   const imagePaths = [
     "/images/fotoscartagenas/Apoyo1.avif",
     "/images/fotoscartagenas/Apoyo2.avif",
@@ -23,6 +27,12 @@ const Nosotros = () => {
 
   return (
     <div className="w-full bg-white text-cafeOscuro">
+      <Helmet> {/* 👈 Añade Helmet aquí */}
+        <title>{t('seo.nosotros.title')}</title>
+        <meta name="description" content={t('seo.nosotros.description')} />
+        <meta name="keywords" content={t('seo.nosotros.keywords')} />
+      </Helmet>
+
       {/* Sección: Quiénes Somos */}
       <section className="w-full py-24 px-6 text-center max-w-4xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 mb-4">
