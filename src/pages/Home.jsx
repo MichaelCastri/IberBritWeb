@@ -1,8 +1,7 @@
-// src/pages/Home.jsx
+import React, { useEffect } from "react";
+import { Helmet } from 'react-helmet-async';
+import { useTranslation } from 'react-i18next';
 
-import React from "react";
-import { Helmet } from 'react-helmet-async'; // 👈 Agrega esta línea
-import { useTranslation } from 'react-i18next'; // 👈 Agrega traducciones
 import Hero from "../components/Hero";
 import AreasServicios from "../components/AreasServicios";
 import KitsResumen from "../components/KitsResumen";
@@ -11,14 +10,20 @@ import Estadisticas from "../components/Estadisticas";
 import Testimonios from "../components/Testimonios";
 import Ubicaciones from "../components/Ubicaciones";
 import MarcasColaboradoras from "../components/MarcasColaboradoras";
-// Aquí irán los nuevos imports
 
 const Home = () => {
-  const { t } = useTranslation(); // 👈 Inicializa traducciones
+  const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    const path = window.location.pathname;
+    if (!path.startsWith("/en")) {
+      i18n.changeLanguage("es");
+    }
+  }, []);
 
   return (
     <div className="home-page min-h-screen">
-      <Helmet> {/* 👈 Añade Helmet aquí */}
+      <Helmet>
         <title>{t('seo.home.title')}</title>
         <meta name="description" content={t('seo.home.description')} />
         <meta name="keywords" content={t('seo.home.keywords')} />
@@ -26,37 +31,36 @@ const Home = () => {
 
       <Hero />
 
-      {/* Áreas y Servicios */}
       <section id="areas-servicios">
         <AreasServicios />
       </section>
 
-      {/* Kits de Asesoramiento Legal */}
       <section id="kits">
         <KitsResumen />
       </section>
 
-      {/* Por qué elegirnos */}
       <section id="porque-elegirnos">
         <PorqueElegirnos />
       </section>
 
-      {/* Llamada a la acción */}
       <section id="cta">
         <Estadisticas />
       </section>
 
-      {/* Reseñas / Casos */}
       <section id="casos-reales">
         <Testimonios />
       </section>
 
-      {/* Ubicaciones */}
       <section id="ubicaciones">
         <Ubicaciones />
       </section>
 
-      {/* Marcas colaborativas */}
+      {/* el logo y el pre-marcas */}
+      <div className="text-center bg-white py-10 px-4 text-black">
+      <h3>MARCAS QUE CONFÍAN EN NOSOTROS</h3>
+      </div>
+
+
       <section id="marcas">
         <MarcasColaboradoras />
       </section>

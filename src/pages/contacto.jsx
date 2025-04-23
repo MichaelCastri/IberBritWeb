@@ -91,6 +91,11 @@ const Contacto = () => {
         <title>{t('seo.contacto.title')}</title>
         <meta name="description" content={t('seo.contacto.description')} />
         <meta name="keywords" content={t('seo.contacto.keywords')} />
+
+        {/* hreflang para multidioma */}
+        <link rel="alternate" href="https://www.iberbrit.com/contacto" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/contact" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/contacto" hreflang="x-default" />
       </Helmet>
 
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>

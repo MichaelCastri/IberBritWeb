@@ -15,6 +15,10 @@ const Oficinas = () => {
         <title>{t('seo.oficinas.title')}</title>
         <meta name="description" content={t('seo.oficinas.description')} />
         <meta name="keywords" content={t('seo.oficinas.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/oficinas" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/offices" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/oficinas" hreflang="x-default" />
       </Helmet>
 
       <section className="max-w-6xl mx-auto text-center">

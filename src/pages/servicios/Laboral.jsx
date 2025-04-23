@@ -15,6 +15,10 @@ const Laboral = () => {
         <title>{t('seo.laboral.title')}</title>
         <meta name="description" content={t('seo.laboral.description')} />
         <meta name="keywords" content={t('seo.laboral.keywords')} />
+        
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/laboral" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/services/labor" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/laboral" hreflang="x-default" />
       </Helmet>
 
       {/* HERO */}

@@ -31,6 +31,10 @@ const Nosotros = () => {
         <title>{t('seo.nosotros.title')}</title>
         <meta name="description" content={t('seo.nosotros.description')} />
         <meta name="keywords" content={t('seo.nosotros.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/nosotros" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/about" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/nosotros" hreflang="x-default" />
       </Helmet>
 
       {/* Sección: Quiénes Somos */}

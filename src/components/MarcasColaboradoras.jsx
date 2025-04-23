@@ -22,11 +22,10 @@ const marcas = [
 
 const MarcasColaboradoras = () => {
 return (
+    
     <section className="w-full bg-gray-900 py-5 px-4">
         <div className="max-w-6xl mx-auto text-center">
-            <h2>MARCAS QUE CONFÍAN EN NOSOTROS</h2>
-       
-
+               
             <div className="overflow-hidden relative">
                 <div className="flex gap-12 animate-marquee w-max">
                     {[...marcas, ...marcas].map((src, index) => (

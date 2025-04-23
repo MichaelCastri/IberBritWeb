@@ -51,7 +51,9 @@ const Ubicaciones = () => {
                 <p className="text-white text-sm mt-1">{oficina.direccion}</p>
               </div>
             </a>
+             
           ))}
+          
         </div>
       </div>
     </section>

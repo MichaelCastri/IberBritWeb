@@ -15,6 +15,10 @@ const Legal = () => {
         <title>{t('seo.legal.title')}</title>
         <meta name="description" content={t('seo.legal.description')} />
         <meta name="keywords" content={t('seo.legal.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/legal" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/services/legal" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/legal" hreflang="x-default" />
       </Helmet>
 
       {/* HERO */}

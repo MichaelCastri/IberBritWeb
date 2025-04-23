@@ -19,6 +19,10 @@ const Fiscal = () => {
         <title>{t('seo.fiscal.title')}</title>
         <meta name="description" content={t('seo.fiscal.description')} />
         <meta name="keywords" content={t('seo.fiscal.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/fiscal" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/services/tax" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/servicios/fiscal" hreflang="x-default" />
       </Helmet>
 
       {/* HERO */}

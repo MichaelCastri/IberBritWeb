@@ -39,6 +39,10 @@ const Paquetes = () => {
         <title>{t('seo.paquetes.title')}</title>
         <meta name="description" content={t('seo.paquetes.description')} />
         <meta name="keywords" content={t('seo.paquetes.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/paquetes" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/packages" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/paquetes" hreflang="x-default" />
       </Helmet>
 
       <div className="max-w-7xl mx-auto">
@@ -57,11 +61,10 @@ const Paquetes = () => {
               <div
                 key={idx}
                 ref={(el) => (refs.current[kit.nombre] = el)}
-                className={`relative flex flex-col justify-between p-8 rounded-3xl border transition-all duration-300 cursor-pointer overflow-hidden ${
-                  isOpen
+                className={`relative flex flex-col justify-between p-8 rounded-3xl border transition-all duration-300 cursor-pointer overflow-hidden ${isOpen
                     ? "bg-gray-100 text-gray-900 border-red-800 shadow-xl scale-[1.02]"
                     : "bg-white text-gray-900 border-gray-200 hover:shadow-md"
-                }`}
+                  }`}
               >
                 <div className="space-y-4">
                   <h2 className="text-2xl font-bold">{kit.nombre}</h2>
@@ -89,11 +92,10 @@ const Paquetes = () => {
                   )}
                   <button
                     onClick={() => solicitarInformacion(kit.nombre)}
-                    className={`w-full py-2 px-4 rounded-md font-semibold transition ${
-                      isOpen
+                    className={`w-full py-2 px-4 rounded-md font-semibold transition ${isOpen
                         ? "border-red-800 bg-red-800 hover:bg-red-700 text-white"
                         : "border-red-800 bg-red-800 hover:bg-red-700 text-white"
-                    }`}
+                      }`}
                   >
                     Solicitar información
                   </button>

@@ -16,6 +16,10 @@ const Servicios = () => {
         <title>{t('seo.servicios.title')}</title>
         <meta name="description" content={t('seo.servicios.description')} />
         <meta name="keywords" content={t('seo.servicios.keywords')} />
+
+        <link rel="alternate" href="https://www.iberbrit.com/servicios" hreflang="es" />
+        <link rel="alternate" href="https://www.iberbrit.com/en/services" hreflang="en" />
+        <link rel="alternate" href="https://www.iberbrit.com/servicios" hreflang="x-default" />
       </Helmet>
 
       {/* HERO CON FONDO DINÁMICO */}
