@@ -228,7 +228,7 @@
         ]
       },
       "kitNoResidentes": {
-        "nombre": "Kit No Residentes",
+        "nombre": "Kit No Residentes Con Inmuebles ",
         "descripcion": "Para no residentes con obligaciones fiscales en España: IRNR, IBI/SUMA, representación y más.",
         "beneficios": [
           "Estudio fiscal personalizado en España",
@@ -239,7 +239,7 @@
         ]
       },
       "kitResidentes": {
-        "nombre": "Kit Residentes",
+        "nombre": "Kit Fiscal Sociedades Inactivas",
         "descripcion": "Para residentes con sociedades patrimoniales sin actividad fiscal.",
         "beneficios": [
           "Declaraciones fiscales: Impuesto Sociedades (sin actividad)",
@@ -269,6 +269,33 @@
           "Confección de nóminas",
           "Presentaciones telemáticas"
         ]
+      },
+      "asesoriainmobiliaria": {
+        "nombre": "Asesoria Inmobiliaria Fiscal",
+        "descripcion": "Asesoría integral para inmobiliarias: gestión de contratos y cumplimiento normativo.",
+       "beneficios": [
+          "Asesoría legal y fiscal para inmobiliarias",
+          "Gestión de alquileres y contratos",
+          "Cumplimiento normativo en operaciones inmobiliarias",
+          "Asistencia en inspecciones y requerimientos"
+          
+          
+        ]
+        
+        
+      },
+      "liquidaciondesociedades": {
+        "nombre": "Liquidación de Sociedades",
+        "descripcion": "Asesoría integral para la liquidación de sociedades: cumplimiento normativo y gestión de activos.",
+       "beneficios": [
+          "Asesoría legal y fiscal para liquidación de sociedades",
+          "Gestión de activos y pasivos",
+          "Cumplimiento normativo en procesos de liquidación",
+          "Asistencia en inspecciones y requerimientos"
+          
+        ]
+        
+        
       }
     }
   },

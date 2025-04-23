@@ -127,6 +127,7 @@
         "Continuous consultancy"
       ]
     }
+    
   },
   "porqueElegirnos": {
     "titulo": "Why choose Iberbrit?",
@@ -241,13 +242,14 @@
         ]
       },
       "kitResidentes": {
-        "nombre": "Resident Kit",
-        "descripcion": "For residents with inactive holding companies.",
+        "nombre": "inactive companies Fiscal Kit",
+        "descripcion": "Complete fiscal service for inactive companies: accounting, tax filing, and more.",
         "beneficios": [
-          "Corporate tax returns (inactive companies)",
+          "Tax planning",
+          "Tax returns: VAT, Census, IAE, Withholdings, IRPF",
           "Online submissions",
           "Request for tax certificates",
-          "Official books legalization"
+          "Handling of tax inquiries"
         ]
       },
       "kitSociedadCivil": {
@@ -271,6 +273,29 @@
           "Payroll preparation",
           "Online submissions"
         ]
+      },
+      "asesoriainmobiliaria": {
+        "nombre": "Real Estate Advisory",
+        "descripcion": "Comprehensive advisory for real estate operations: tax, legal, and accounting management.",
+       "beneficios": [
+          "Tax planning for real estate operations",
+          "Legal advice on property transactions",
+          "Accounting management of real estate assets",
+          "Assistance in tax inspections and requirements"
+        ]     
+        
+      },
+      "liquidaciondesociedades": {
+        "nombre": "Company Liquidation Advisory",
+        "descripcion": "Comprehensive advisory for the liquidation of companies: tax, legal, and accounting management.",
+       "beneficios": [
+          "Tax planning for company liquidation",
+          "Legal advice on liquidation processes",
+          "Accounting management of liquidated companies",
+          "Assistance in tax inspections and requirements"
+        ]
+
+        
       }
     }
   },
