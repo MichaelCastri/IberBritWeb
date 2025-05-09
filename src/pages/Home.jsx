@@ -15,11 +15,17 @@ const Home = () => {
   const { t, i18n } = useTranslation();
 
   useEffect(() => {
+    // Este useEffect realmente podría ser innecesario si i18n ya gestiona el idioma.
     const path = window.location.pathname;
     if (!path.startsWith("/en")) {
       i18n.changeLanguage("es");
     }
   }, []);
+
+  // Definimos URLs según el idioma
+  const currentLang = i18n.language;
+  const urlEs = "https://www.iberbrit.com/";
+  const urlEn = "https://www.iberbrit.com/en/";
 
   return (
     <div className="home-page min-h-screen">
@@ -27,6 +33,15 @@ const Home = () => {
         <title>{t('seo.home.title')}</title>
         <meta name="description" content={t('seo.home.description')} />
         <meta name="keywords" content={t('seo.home.keywords')} />
+
+        
+        {/* hreflang para versiones en distintos idiomas */}
+        <link rel="alternate" hreflang="es" href={urlEs} />
+        <link rel="alternate" hreflang="en" href={urlEn} />
+        <link rel="alternate" hreflang="x-default" href={urlEs} />
+
+        {/* Canonical dinámico */}
+        <link rel="canonical" href={currentLang === "en" ? urlEn : urlEs} />
       </Helmet>
 
       <Hero />
@@ -57,7 +72,7 @@ const Home = () => {
 
       {/* el logo y el pre-marcas */}
       <div className="text-center bg-white py-10 px-4 text-black">
-      <h3>MARCAS QUE CONFÍAN EN NOSOTROS</h3>
+        <h3>MARCAS QUE CONFÍAN EN NOSOTROS</h3>
       </div>
 
 

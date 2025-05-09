@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Paquetes = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const location = useLocation();
   const navigate = useNavigate();
   const query = new URLSearchParams(location.search);
@@ -32,6 +32,10 @@ const Paquetes = () => {
 
   // Traemos los kits traducidos
   const kits = t("paquetes.kits", { returnObjects: true });
+  // URLs según idioma
+  const currentLang = i18n.language;
+  const urlEs = "https://www.iberbrit.com/paquetes";
+  const urlEn = "https://www.iberbrit.com/en/packages";
 
   return (
     <section className="w-full min-h-screen bg-white py-24 px-4 text-cafeOscuro">
@@ -39,11 +43,15 @@ const Paquetes = () => {
         <title>{t('seo.paquetes.title')}</title>
         <meta name="description" content={t('seo.paquetes.description')} />
         <meta name="keywords" content={t('seo.paquetes.keywords')} />
+        {/* hreflang dinámico */}
+        <link rel="alternate" href={urlEs} hreflang="es" />
+        <link rel="alternate" href={urlEn} hreflang="en" />
+        <link rel="alternate" href={urlEs} hreflang="x-default" />
 
-        <link rel="alternate" href="https://www.iberbrit.com/paquetes" hreflang="es" />
-        <link rel="alternate" href="https://www.iberbrit.com/en/packages" hreflang="en" />
-        <link rel="alternate" href="https://www.iberbrit.com/paquetes" hreflang="x-default" />
+        {/* canonical dinámico */}
+        <link rel="canonical" href={currentLang === "en" ? urlEn : urlEs} />
       </Helmet>
+
 
       <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-gray-900 text-center mb-12">
@@ -62,8 +70,8 @@ const Paquetes = () => {
                 key={idx}
                 ref={(el) => (refs.current[kit.nombre] = el)}
                 className={`relative flex flex-col justify-between p-8 rounded-3xl border transition-all duration-300 cursor-pointer overflow-hidden ${isOpen
-                    ? "bg-gray-100 text-gray-900 border-red-800 shadow-xl scale-[1.02]"
-                    : "bg-white text-gray-900 border-gray-200 hover:shadow-md"
+                  ? "bg-gray-100 text-gray-900 border-red-800 shadow-xl scale-[1.02]"
+                  : "bg-white text-gray-900 border-gray-200 hover:shadow-md"
                   }`}
               >
                 <div className="space-y-4">
@@ -93,8 +101,8 @@ const Paquetes = () => {
                   <button
                     onClick={() => solicitarInformacion(kit.nombre)}
                     className={`w-full py-2 px-4 rounded-md font-semibold transition ${isOpen
-                        ? "border-red-800 bg-red-800 hover:bg-red-700 text-white"
-                        : "border-red-800 bg-red-800 hover:bg-red-700 text-white"
+                      ? "border-red-800 bg-red-800 hover:bg-red-700 text-white"
+                      : "border-red-800 bg-red-800 hover:bg-red-700 text-white"
                       }`}
                   >
                     Solicitar información

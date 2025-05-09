@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 import Equipo from "../components/Equipo";
 
 const Nosotros = () => {
-  const { t } = useTranslation(); // 👈 Traducciones
+  const { t, i18n } = useTranslation(); // 👈 Traducciones
 
   const imagePaths = [
     "/images/fotoscartagenas/Apoyo1.avif",
@@ -25,6 +25,11 @@ const Nosotros = () => {
     return () => clearInterval(interval);
   }, []);
 
+   // URLs correctas según el idioma
+   const currentLang = i18n.language;
+   const urlEs = "https://www.iberbrit.com/nosotros";
+   const urlEn = "https://www.iberbrit.com/en/about";
+
   return (
     <div className="w-full bg-white text-cafeOscuro">
       <Helmet> {/* 👈 Añade Helmet aquí */}
@@ -32,9 +37,13 @@ const Nosotros = () => {
         <meta name="description" content={t('seo.nosotros.description')} />
         <meta name="keywords" content={t('seo.nosotros.keywords')} />
 
-        <link rel="alternate" href="https://www.iberbrit.com/nosotros" hreflang="es" />
-        <link rel="alternate" href="https://www.iberbrit.com/en/about" hreflang="en" />
-        <link rel="alternate" href="https://www.iberbrit.com/nosotros" hreflang="x-default" />
+        {/* Hreflang dinámicos */}
+        <link rel="alternate" href={urlEs} hreflang="es" />
+        <link rel="alternate" href={urlEn} hreflang="en" />
+        <link rel="alternate" href={urlEs} hreflang="x-default" />
+
+        {/* Canonical dinámico */}
+        <link rel="canonical" href={currentLang === "en" ? urlEn : urlEs} />
       </Helmet>
 
       {/* Sección: Quiénes Somos */}
