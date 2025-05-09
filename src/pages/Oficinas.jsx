@@ -6,8 +6,13 @@ import { useTranslation } from "react-i18next";
 import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 
 const Oficinas = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const oficinas = t("oficinas.lista", { returnObjects: true });
+
+   // Definimos URLs correctas por idioma
+   const currentLang = i18n.language;
+   const urlEs = "https://www.iberbrit.com/oficinas";
+   const urlEn = "https://www.iberbrit.com/en/offices";
 
   return (
     <main className="w-full bg-white min-h-screen py-24 px-6 text-cafeOscuro">
@@ -16,9 +21,13 @@ const Oficinas = () => {
         <meta name="description" content={t('seo.oficinas.description')} />
         <meta name="keywords" content={t('seo.oficinas.keywords')} />
 
-        <link rel="alternate" href="https://www.iberbrit.com/oficinas" hreflang="es" />
-        <link rel="alternate" href="https://www.iberbrit.com/en/offices" hreflang="en" />
-        <link rel="alternate" href="https://www.iberbrit.com/oficinas" hreflang="x-default" />
+        {/* hreflang dinámicos */}
+        <link rel="alternate" href={urlEs} hreflang="es" />
+        <link rel="alternate" href={urlEn} hreflang="en" />
+        <link rel="alternate" href={urlEs} hreflang="x-default" />
+
+        {/* canonical dinámico */}
+        <link rel="canonical" href={currentLang === "en" ? urlEn : urlEs} />
       </Helmet>
 
       <section className="max-w-6xl mx-auto text-center">

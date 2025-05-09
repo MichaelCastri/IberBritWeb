@@ -14,13 +14,14 @@ const equipo = [
     { nombre: "Patricia Amat", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/9.webp" },
     { nombre: "Francisco Lopez", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/13.webp" },
     { nombre: "Nancy Fernandez", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/Nancy.webp" },
-    { nombre: "Adela Gamboa", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
     { nombre: "Miguel", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Miguel.webp" },
     { nombre: "Maribel Aznar García", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Maribel.webp" },
     { nombre: "Alberto Valera", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Alberto.webp" },
     { nombre: "Pilar Lorente", cargo: "Departamento Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Pilar.webp" },
     { nombre: "Tomas Gutierrez", cargo: "Asistente Legal", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
     { nombre: "Michael Castrillon", cargo: "IT Manager", especialidad: "", imagen: "/images/Iberbrit blanco/Iberbrit.webp" },
+    { nombre: "Adela Gamboa", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
+    { nombre: "Maribel", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
 ];
 
 const Equipo = () => {

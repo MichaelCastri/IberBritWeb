@@ -1,6 +1,8 @@
 // src/pages/PoliticasPrivacidad.jsx
 
 import React from "react";
+import { Helmet } from "react-helmet-async"; // ✅ Helmet para SEO técnico
+import { useTranslation } from "react-i18next"; // ✅ Traducción si quieres multidioma
 
 const PoliticaPrivacidad = () => {
   return (

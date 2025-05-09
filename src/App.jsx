@@ -15,10 +15,17 @@ import AvisoLegal from "./pages/AvisoLegal";
 import PoliticaCookies from "./pages/PoliticaCookies";
 import PoliticaPrivacidad from "./pages/PoliticaPrivacidad";
 import BannerCookies from "./components/BannerCookies";
+import { Helmet } from "react-helmet-async"; // ✅ Nuevo: Para manipular el <html lang="">
+import { useTranslation } from "react-i18next"; // ✅ Nuevo: Para detectar el idioma actual
 
 function App() {
+  const { i18n } = useTranslation(); // ✅ Detectamos el idioma actual
   return (
     <Router>
+      {/* ✅ Helmet dinámico para cambiar el idioma del <html> automáticamente */}
+      <Helmet>
+        <html lang={i18n.language || 'es'} />
+      </Helmet>
       <ScrollToTop />
       <Navbar />
 

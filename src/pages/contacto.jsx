@@ -8,7 +8,7 @@ import { Helmet } from 'react-helmet-async'; // 👈 Importa Helmet
 import { useTranslation } from 'react-i18next'; // 👈 Traducciones
 
 const Contacto = () => {
-  const { t } = useTranslation(); // 👈 Inicializa traducción
+  const { t, i18n} = useTranslation(); // 👈 Inicializa traducción
   const location = useLocation();
   const query = new URLSearchParams(location.search);
   const kitSeleccionado = query.get("kit");
@@ -59,7 +59,8 @@ const Contacto = () => {
     }
 
     try {
-      const response = await fetch("https://iberbrit.com/enviar-formulario", {
+      const response = await fetch("https://www.iberbrit.com/enviar-formulario", {
+
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -83,6 +84,11 @@ const Contacto = () => {
     }
   };
 
+ // Definimos URLs correctas según idioma
+ const currentLang = i18n.language;
+ const urlEs = "https://www.iberbrit.com/contacto";
+ const urlEn = "https://www.iberbrit.com/en/contact";
+
   return (
     <section className="relative w-full min-h-screen bg-cover bg-center py-24 px-4"
       style={{ backgroundImage: "url('/images/fotoscartagenas/Apoyo3.avif')" }}>
@@ -96,7 +102,11 @@ const Contacto = () => {
         <link rel="alternate" href="https://www.iberbrit.com/contacto" hreflang="es" />
         <link rel="alternate" href="https://www.iberbrit.com/en/contact" hreflang="en" />
         <link rel="alternate" href="https://www.iberbrit.com/contacto" hreflang="x-default" />
+
+         {/* Canonical dinámico */}
+         <link rel="canonical" href={currentLang === "en" ? urlEn : urlEs} />
       </Helmet>
+
 
       <div className="absolute inset-0 bg-white/70 backdrop-blur-sm"></div>
 
