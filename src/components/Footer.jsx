@@ -42,7 +42,7 @@ const Footer = () => {
           <ul className="flex space-x-4">
             <li><a href="https://www.linkedin.com/company/iberbrit-legal-sl/" className="hover:text-red-800">LinkedIn</a></li>
             <li><a href="https://www.instagram.com/iberbritlegal/" className="hover:text-red-800">Instagram</a></li>
-            <li><a href="#" className="hover:text-red-800">Facebook</a></li>
+            <li><a href="https://www.facebook.com/iberbrit/?locale=es_ES" className="hover:text-red-800">Facebook</a></li>
           </ul>
         </div>
       </div>

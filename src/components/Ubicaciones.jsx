@@ -5,7 +5,7 @@ import React from "react";
 const oficinas = [
   {
     ciudad: "Madrid",
-    direccion: "Pl. del Callao, 1, Planta 5 - Oficina 6, Centro, 28013 Madrid",
+    direccion: "Calle Gran Via 64, Planta 3 - Derecha, Centro, 28013 Madrid",
     link: "https://g.co/kgs/nDg7SyE",
     imagen: "/images/fotoscartagenas/fotoscartagena (11).webp",
   },
