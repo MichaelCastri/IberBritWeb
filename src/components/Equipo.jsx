@@ -21,7 +21,6 @@ const equipo = [
     { nombre: "Tomas Gutierrez", cargo: "Asistente Legal", especialidad: "", imagen: "/images/Iberbrit blanco/Tommy.webp" },
     { nombre: "Michael Castrillon", cargo: "IT Manager", especialidad: "", imagen: "/images/Iberbrit blanco/Michael.webp" },
     { nombre: "Adela Gamboa", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/Adela.webp" },
-    { nombre: "Marina Jimenez ", cargo: "Departamento Fiscal y Contable", especialidad: "", imagen: "/images/Iberbrit blanco/.webp" },
 ];
 
 const Equipo = () => {

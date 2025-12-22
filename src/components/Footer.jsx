@@ -19,7 +19,7 @@ const Footer = () => {
           <h4 className="font-semibold mb-4">Navegación</h4>
           <ul className="space-y-2 text-sm">
             <li><Link to="/" className="hover:underline">Inicio</Link></li>
-            <li><Link to="/paquetes" className="hover:underline">Kits</Link></li>
+            <li><Link to="/paquetes" className="hover:underline">Packs</Link></li>
             <li><Link to="/contacto" className="hover:underline">Contacto</Link></li>
             <li><Link to="/legal" className="hover:underline">Aviso Legal</Link></li>
             <li><Link to="/politicas-cookies" className="hover:underline">Política de Cookies</Link></li>
